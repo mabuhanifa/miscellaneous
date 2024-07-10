@@ -28,7 +28,7 @@
   background-repeat: no-repeat;
 }
 
-.hero h1,
+.hero > h1,
 p {
   margin: 20px 0px;
   text-align: center;
@@ -57,4 +57,34 @@ p {
   color: white;
   padding: 10px;
   font-weight: 700;
+}
+
+.faq {
+  background: #eeeeee;
+  margin: 20px 100px;
+  padding: 30px;
+}
+
+.faq > div > h1 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.faq-child {
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+.faq-child:nth-child(even) {
+  flex-direction: row-reverse;
+  background-color: rgb(238, 238, 238);
+}
+.learn-more {
+  border: 1px solid lightgray;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-weight: 700;
+  background-color: inherit;
 }
