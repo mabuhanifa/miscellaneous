@@ -142,13 +142,16 @@ iframe {
   padding: 20px;
   border-radius: 10px;
 }
+
 .next-target {
   margin: 100px;
 }
+
 .next-target h2 {
   text-align: center;
   margin: 30px 0;
 }
+
 .next-target-child {
   border: 1px solid lightgray;
   margin: 10px 0;
@@ -159,9 +162,50 @@ iframe {
   align-items: center;
   justify-content: start;
 }
+
 .next-target-child img {
   margin: 0 20px;
 }
+
 .next-target-child a {
   text-decoration: underline;
+}
+.support {
+  background-image: url("../images/assets/handshake.jpg");
+  margin: 50px 100px;
+  background-repeat: no-repeat;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.support h2,
+p {
+  text-align: center;
+}
+
+.t-white {
+  color: white;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  row-gap: 20px;
+}
+
+.box input {
+  padding: 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-right: 20px;
+  max-width: 400px;
+}
+
+.box button {
+  padding: 5px 10px;
+  outline: none;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
 }
