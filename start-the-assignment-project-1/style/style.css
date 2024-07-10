@@ -3,6 +3,7 @@
   padding: 0;
   text-decoration: none;
   color: inherit;
+  line-height: 25px;
 }
 
 .nav :nth-child(1) {
@@ -75,11 +76,14 @@ p {
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  align-items: center;
 }
+
 .faq-child:nth-child(even) {
   flex-direction: row-reverse;
   background-color: rgb(238, 238, 238);
 }
+
 .learn-more {
   border: 1px solid lightgray;
   margin-bottom: 20px;
@@ -87,4 +91,17 @@ p {
   padding: 10px 20px;
   font-weight: 700;
   background-color: inherit;
+}
+.inspiration h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+.i-frame {
+  display: flex;
+  justify-content: center;
+}
+iframe {
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
 }
