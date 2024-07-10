@@ -209,3 +209,15 @@ p {
   background-color: white;
   border-radius: 5px;
 }
+
+footer {
+  margin: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer img {
+  width: 30px;
+  margin: 5px;
+}
