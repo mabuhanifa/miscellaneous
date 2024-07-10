@@ -92,16 +92,45 @@ p {
   font-weight: 700;
   background-color: inherit;
 }
+
 .inspiration h1 {
   text-align: center;
   margin-top: 50px;
 }
+
 .i-frame {
   display: flex;
   justify-content: center;
 }
+
 iframe {
   padding: 20px;
   border: 1px solid lightgray;
   border-radius: 1rem;
+  margin: 50px 0;
+}
+
+.current-target h2 {
+  text-align: center;
+}
+
+.current-target-child {
+  margin: 30px 200px;
+  display: flex;
+  justify-content: space-around;
+}
+.html {
+  background-color: rgb(255, 222, 222);
+}
+.css {
+  background-color: rgb(224, 223, 255);
+}
+.js {
+  background-color: rgb(255, 253, 226);
+}
+.html,
+.css,
+.js {
+  padding: 20px;
+  border-radius: 10px;
 }
