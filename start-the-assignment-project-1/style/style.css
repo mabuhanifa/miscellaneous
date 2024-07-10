@@ -119,18 +119,49 @@ iframe {
   display: flex;
   justify-content: space-around;
 }
+
+.current-target-child a {
+  text-decoration: underline;
+}
+
 .html {
   background-color: rgb(255, 222, 222);
 }
+
 .css {
   background-color: rgb(224, 223, 255);
 }
+
 .js {
   background-color: rgb(255, 253, 226);
 }
+
 .html,
 .css,
 .js {
   padding: 20px;
   border-radius: 10px;
+}
+.next-target {
+  margin: 100px;
+}
+.next-target h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+.next-target-child {
+  border: 1px solid lightgray;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 1px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.next-target-child img {
+  margin: 0 20px;
+}
+.next-target-child a {
+  text-decoration: underline;
 }
