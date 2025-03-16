@@ -1,6 +1,6 @@
 export default function Ai({ name, logo, link }) {
   return (
-    <div className="p-2 border-1 rounded-lg border-gray-200 shadow-white">
+    <div className="p-3 border-1 rounded-lg border-gray-200 shadow-white">
       <div>
         <h2 className="text-xl font-medium">{name}</h2>
         <img src={logo} alt="Ai" className="w-20 my-2" />
