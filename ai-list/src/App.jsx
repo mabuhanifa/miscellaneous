@@ -2,7 +2,7 @@ import Ai from "./components/Ai";
 export default function App() {
   return (
     <div className="md:container mx-auto">
-      <div className="m-10 p-5 border-1 rounded-lg border-gray-200 shadow-white grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4   gap-4">
+      <div className="mt-2 p-3 md:p-5 border-1 rounded-lg border-gray-200 shadow-white grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
         <Ai
           name="ChatGpt"
           logo="https://img.utdstc.com/icon/9c5/5ec/9c55eca10f08761429d2b7b977c7aafc3c09789a9d1ec945d814d7de9d2b0203:200"
