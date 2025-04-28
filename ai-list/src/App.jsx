@@ -85,6 +85,11 @@ export default function App() {
           logo="https://play-lh.googleusercontent.com/Z_fquqqNzAd8FkpSjlnURnMtmLh8HRf_h_kIwhs0NbXKpO4WZ_fyZfi0f5yQsNmRL_lP"
           link="https://blackbox.ai"
         />
+        {/* <Ai
+          name="Cohere"
+          logo="https://avatars.githubusercontent.com/u/54850923?s=280&v=4"
+          link="https://coral.cohere.com/"
+        /> */}
       </div>
     </div>
   );
