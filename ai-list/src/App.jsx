@@ -15,7 +15,7 @@ export default function App() {
         />
         <Ai
           name="Gemini"
-          logo="https://img.utdstc.com/icon/38b/89a/38b89a668208de992e59fe9941d9f1f4a5e2febe97e4d36039c85250b6675904:200"
+          logo="https://brandlogos.net/wp-content/uploads/2025/03/gemini_icon-logo_brandlogos.net_bqzeu-300x300.png"
           link="https://gemini.google.com/app"
         />
         <Ai
