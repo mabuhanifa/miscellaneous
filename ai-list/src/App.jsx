@@ -48,7 +48,7 @@ export default function App() {
         <Ai
           name="Grok"
           logo="https://images.seeklogo.com/logo-png/49/2/xai-logo-png_seeklogo-491313.png"
-          link="https://x.ai/"
+          link="https://grok.com/?referrer=website"
         />
         <Ai
           name="Kimi"
