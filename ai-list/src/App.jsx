@@ -19,11 +19,9 @@ export default function App() {
           link="https://gemini.google.com/app"
         />
         <Ai
-          name="MetaAi"
-          logo={
-            "https://zorgle.co.uk/wp-content/uploads/2024/11/Meta-ai-logo.png"
-          }
-          link="https://www.meta.ai/"
+          name="Z Ai"
+          logo="https://z-cdn.chatglm.cn/z-ai/static/logo.svg"
+          link="https://chat.z.ai/"
         />
         <Ai
           name="Claude"
