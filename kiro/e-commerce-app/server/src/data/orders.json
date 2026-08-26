@@ -1,0 +1,496 @@
+[
+  {
+    "orderNumber": "ORD241225001",
+    "customer": "ahmed.hassan@example.com",
+    "items": [
+      {
+        "product": "samsung-galaxy-s23-ultra",
+        "variant": "SAMSUNG-S23U-256-BLACK",
+        "productSnapshot": {
+          "name": "Samsung Galaxy S23 Ultra",
+          "slug": "samsung-galaxy-s23-ultra",
+          "sku": "SAMSUNG-S23U-256-BLACK",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600",
+            "alt": "Samsung Galaxy S23 Ultra"
+          },
+          "attributes": {
+            "storage": "256GB",
+            "color": "Phantom Black",
+            "ram": "12GB"
+          }
+        },
+        "quantity": 1,
+        "unitPrice": 135000,
+        "comparePrice": 145000,
+        "discount": 0,
+        "totalPrice": 135000,
+        "taxRate": 0,
+        "taxAmount": 0
+      }
+    ],
+    "status": "delivered",
+    "statusHistory": [
+      {
+        "status": "pending",
+        "timestamp": "2024-12-20T10:00:00Z",
+        "note": "Order placed"
+      },
+      {
+        "status": "confirmed",
+        "timestamp": "2024-12-20T11:30:00Z",
+        "note": "Payment confirmed"
+      },
+      {
+        "status": "processing",
+        "timestamp": "2024-12-21T09:00:00Z",
+        "note": "Order being prepared"
+      },
+      {
+        "status": "shipped",
+        "timestamp": "2024-12-22T14:00:00Z",
+        "note": "Order shipped via Pathao"
+      },
+      {
+        "status": "delivered",
+        "timestamp": "2024-12-23T16:30:00Z",
+        "note": "Successfully delivered"
+      }
+    ],
+    "shipping": {
+      "address": {
+        "name": "Ahmed Hassan",
+        "phone": "+8801712345683",
+        "address": "House 123, Road 5, Block C",
+        "division": "Dhaka",
+        "district": "Dhaka",
+        "thana": "Dhanmondi",
+        "postalCode": "1205",
+        "landmark": "Near Dhanmondi Lake"
+      },
+      "method": "standard",
+      "provider": "pathao",
+      "cost": 60,
+      "estimatedDelivery": "2024-12-23T18:00:00Z",
+      "actualDelivery": "2024-12-23T16:30:00Z",
+      "trackingNumber": "PTH123456789",
+      "status": "delivered",
+      "statusHistory": [
+        {
+          "status": "pending",
+          "timestamp": "2024-12-22T14:00:00Z",
+          "note": "Package ready for pickup"
+        },
+        {
+          "status": "picked_up",
+          "timestamp": "2024-12-22T15:30:00Z",
+          "location": "Dhaka Warehouse"
+        },
+        {
+          "status": "in_transit",
+          "timestamp": "2024-12-23T10:00:00Z",
+          "location": "Dhanmondi Hub"
+        },
+        {
+          "status": "out_for_delivery",
+          "timestamp": "2024-12-23T14:00:00Z",
+          "location": "Dhanmondi Area"
+        },
+        {
+          "status": "delivered",
+          "timestamp": "2024-12-23T16:30:00Z",
+          "location": "Customer Address"
+        }
+      ]
+    },
+    "payment": {
+      "method": "bkash",
+      "status": "paid",
+      "amount": 135060,
+      "paidAmount": 135060,
+      "gateway": {
+        "provider": "bkash",
+        "transactionId": "BKS123456789",
+        "gatewayTransactionId": "TXN987654321"
+      },
+      "initiatedAt": "2024-12-20T10:05:00Z",
+      "paidAt": "2024-12-20T10:08:00Z"
+    },
+    "subtotal": 135000,
+    "totalDiscount": 0,
+    "taxAmount": 0,
+    "shippingCost": 60,
+    "total": 135060,
+    "currency": "BDT",
+    "notes": {
+      "customer": "Please deliver after 4 PM"
+    },
+    "source": "web",
+    "placedAt": "2024-12-20T10:00:00Z",
+    "confirmedAt": "2024-12-20T11:30:00Z",
+    "shippedAt": "2024-12-22T14:00:00Z",
+    "deliveredAt": "2024-12-23T16:30:00Z"
+  },
+  {
+    "orderNumber": "ORD241224002",
+    "customer": "fatima.begum@example.com",
+    "items": [
+      {
+        "product": "elegant-summer-dress",
+        "variant": "DRESS-SUMMER-M-SOLID",
+        "productSnapshot": {
+          "name": "Elegant Summer Dress",
+          "slug": "elegant-summer-dress",
+          "sku": "DRESS-SUMMER-M-SOLID",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600",
+            "alt": "Elegant Summer Dress"
+          },
+          "attributes": {
+            "size": "M",
+            "pattern": "Solid",
+            "color": "Blue"
+          }
+        },
+        "quantity": 2,
+        "unitPrice": 2299,
+        "totalPrice": 4598,
+        "taxRate": 0,
+        "taxAmount": 0
+      },
+      {
+        "product": "premium-cotton-t-shirt",
+        "variant": "TSHIRT-COTTON-L-NAVY",
+        "productSnapshot": {
+          "name": "Premium Cotton T-Shirt",
+          "slug": "premium-cotton-t-shirt",
+          "sku": "TSHIRT-COTTON-L-NAVY",
+          "attributes": {
+            "size": "L",
+            "color": "Navy",
+            "material": "100% Cotton"
+          }
+        },
+        "quantity": 1,
+        "unitPrice": 999,
+        "totalPrice": 999,
+        "taxRate": 0,
+        "taxAmount": 0
+      }
+    ],
+    "status": "shipped",
+    "statusHistory": [
+      {
+        "status": "pending",
+        "timestamp": "2024-12-22T14:30:00Z",
+        "note": "Order placed"
+      },
+      {
+        "status": "confirmed",
+        "timestamp": "2024-12-22T15:00:00Z",
+        "note": "Payment confirmed via COD"
+      },
+      {
+        "status": "processing",
+        "timestamp": "2024-12-23T09:00:00Z",
+        "note": "Order being prepared"
+      },
+      {
+        "status": "shipped",
+        "timestamp": "2024-12-24T11:00:00Z",
+        "note": "Order shipped via Paperfly"
+      }
+    ],
+    "shipping": {
+      "address": {
+        "name": "Fatima Begum",
+        "phone": "+8801812345684",
+        "address": "Flat 4B, Green Tower",
+        "division": "Chittagong",
+        "district": "Chittagong",
+        "thana": "Agrabad",
+        "postalCode": "4100",
+        "landmark": "Opposite City Hospital"
+      },
+      "method": "standard",
+      "provider": "paperfly",
+      "cost": 120,
+      "estimatedDelivery": "2024-12-26T18:00:00Z",
+      "trackingNumber": "PF987654321",
+      "status": "in_transit",
+      "statusHistory": [
+        {
+          "status": "pending",
+          "timestamp": "2024-12-24T11:00:00Z"
+        },
+        {
+          "status": "picked_up",
+          "timestamp": "2024-12-24T14:00:00Z",
+          "location": "Dhaka Warehouse"
+        },
+        {
+          "status": "in_transit",
+          "timestamp": "2024-12-25T08:00:00Z",
+          "location": "Chittagong Hub"
+        }
+      ]
+    },
+    "payment": {
+      "method": "cod",
+      "status": "pending",
+      "amount": 5717,
+      "paidAmount": 0,
+      "initiatedAt": "2024-12-22T14:30:00Z"
+    },
+    "subtotal": 5597,
+    "totalDiscount": 0,
+    "taxAmount": 0,
+    "shippingCost": 120,
+    "total": 5717,
+    "currency": "BDT",
+    "source": "mobile",
+    "placedAt": "2024-12-22T14:30:00Z",
+    "confirmedAt": "2024-12-22T15:00:00Z",
+    "shippedAt": "2024-12-24T11:00:00Z"
+  },
+  {
+    "orderNumber": "ORD241223003",
+    "customer": "mohammad.ali@example.com",
+    "items": [
+      {
+        "product": "premium-cotton-t-shirt",
+        "variant": "TSHIRT-COTTON-M-BLACK",
+        "productSnapshot": {
+          "name": "Premium Cotton T-Shirt",
+          "slug": "premium-cotton-t-shirt",
+          "sku": "TSHIRT-COTTON-M-BLACK",
+          "attributes": {
+            "size": "M",
+            "color": "Black",
+            "material": "100% Cotton"
+          }
+        },
+        "quantity": 3,
+        "unitPrice": 899,
+        "comparePrice": 1299,
+        "discount": 400,
+        "discountType": "fixed",
+        "totalPrice": 2697,
+        "taxRate": 0,
+        "taxAmount": 0
+      }
+    ],
+    "status": "processing",
+    "statusHistory": [
+      {
+        "status": "pending",
+        "timestamp": "2024-12-23T16:00:00Z",
+        "note": "Order placed"
+      },
+      {
+        "status": "confirmed",
+        "timestamp": "2024-12-23T16:30:00Z",
+        "note": "Payment confirmed"
+      },
+      {
+        "status": "processing",
+        "timestamp": "2024-12-24T10:00:00Z",
+        "note": "Order being prepared"
+      }
+    ],
+    "shipping": {
+      "address": {
+        "name": "Mohammad Ali",
+        "phone": "+8801912345685",
+        "address": "Village: Rampur, Post: Savar",
+        "division": "Dhaka",
+        "district": "Dhaka",
+        "thana": "Savar",
+        "postalCode": "1340"
+      },
+      "method": "standard",
+      "provider": "ecourier",
+      "cost": 80,
+      "estimatedDelivery": "2024-12-27T18:00:00Z",
+      "status": "pending"
+    },
+    "payment": {
+      "method": "nagad",
+      "status": "paid",
+      "amount": 2777,
+      "paidAmount": 2777,
+      "gateway": {
+        "provider": "nagad",
+        "transactionId": "NGD123456789"
+      },
+      "initiatedAt": "2024-12-23T16:05:00Z",
+      "paidAt": "2024-12-23T16:10:00Z"
+    },
+    "subtotal": 2697,
+    "totalDiscount": 400,
+    "taxAmount": 0,
+    "shippingCost": 80,
+    "total": 2777,
+    "currency": "BDT",
+    "discounts": [
+      {
+        "type": "promotion",
+        "name": "Buy 3 Get Discount",
+        "amount": 400
+      }
+    ],
+    "source": "web",
+    "placedAt": "2024-12-23T16:00:00Z",
+    "confirmedAt": "2024-12-23T16:30:00Z"
+  },
+  {
+    "orderNumber": "ORD241222004",
+    "customer": "kamal.uddin@example.com",
+    "items": [
+      {
+        "product": "macbook-air-m2",
+        "variant": "MBA-M2-512-GOLD",
+        "productSnapshot": {
+          "name": "MacBook Air M2",
+          "slug": "macbook-air-m2",
+          "sku": "MBA-M2-512-GOLD",
+          "attributes": {
+            "storage": "512GB SSD",
+            "color": "Midnight",
+            "ram": "8GB",
+            "processor": "Apple M2"
+          }
+        },
+        "quantity": 1,
+        "unitPrice": 155000,
+        "totalPrice": 155000,
+        "taxRate": 0,
+        "taxAmount": 0
+      }
+    ],
+    "status": "cancelled",
+    "statusHistory": [
+      {
+        "status": "pending",
+        "timestamp": "2024-12-22T09:00:00Z",
+        "note": "Order placed"
+      },
+      {
+        "status": "cancelled",
+        "timestamp": "2024-12-22T12:00:00Z",
+        "note": "Cancelled by customer - changed mind"
+      }
+    ],
+    "shipping": {
+      "address": {
+        "name": "Kamal Uddin",
+        "phone": "+8801512345687",
+        "address": "Road 12, House 78, Khulna",
+        "division": "Khulna",
+        "district": "Khulna",
+        "thana": "Khulna Sadar",
+        "postalCode": "9000"
+      },
+      "method": "express",
+      "provider": "pathao",
+      "cost": 150,
+      "status": "pending"
+    },
+    "payment": {
+      "method": "sslcommerz",
+      "status": "cancelled",
+      "amount": 155150,
+      "paidAmount": 0,
+      "gateway": {
+        "provider": "sslcommerz",
+        "sessionId": "SSL123456789"
+      },
+      "initiatedAt": "2024-12-22T09:05:00Z",
+      "failedAt": "2024-12-22T12:00:00Z",
+      "failureReason": "Cancelled by customer"
+    },
+    "subtotal": 155000,
+    "totalDiscount": 0,
+    "taxAmount": 0,
+    "shippingCost": 150,
+    "total": 155150,
+    "currency": "BDT",
+    "notes": {
+      "customer": "Changed my mind, please cancel"
+    },
+    "source": "web",
+    "placedAt": "2024-12-22T09:00:00Z",
+    "cancelledAt": "2024-12-22T12:00:00Z"
+  },
+  {
+    "orderNumber": "ORD241221005",
+    "customer": "ahmed.hassan@example.com",
+    "items": [
+      {
+        "product": "iphone-14-pro-max",
+        "variant": "IPHONE-14PM-256-GOLD",
+        "productSnapshot": {
+          "name": "iPhone 14 Pro Max",
+          "slug": "iphone-14-pro-max",
+          "sku": "IPHONE-14PM-256-GOLD",
+          "attributes": {
+            "storage": "256GB",
+            "color": "Gold",
+            "display": "6.7 inch"
+          }
+        },
+        "quantity": 1,
+        "unitPrice": 165000,
+        "totalPrice": 165000,
+        "taxRate": 0,
+        "taxAmount": 0
+      }
+    ],
+    "status": "pending",
+    "statusHistory": [
+      {
+        "status": "pending",
+        "timestamp": "2024-12-21T18:30:00Z",
+        "note": "Order placed, awaiting payment"
+      }
+    ],
+    "shipping": {
+      "address": {
+        "name": "Ahmed Hassan",
+        "phone": "+8801712345683",
+        "address": "House 123, Road 5, Block C",
+        "division": "Dhaka",
+        "district": "Dhaka",
+        "thana": "Dhanmondi",
+        "postalCode": "1205",
+        "landmark": "Near Dhanmondi Lake"
+      },
+      "method": "express",
+      "provider": "pathao",
+      "cost": 100,
+      "estimatedDelivery": "2024-12-24T18:00:00Z",
+      "status": "pending"
+    },
+    "payment": {
+      "method": "sslcommerz",
+      "status": "pending",
+      "amount": 165100,
+      "paidAmount": 0,
+      "gateway": {
+        "provider": "sslcommerz",
+        "sessionId": "SSL987654321",
+        "paymentUrl": "https://sandbox.sslcommerz.com/gwprocess/v4/api.php"
+      },
+      "initiatedAt": "2024-12-21T18:35:00Z"
+    },
+    "subtotal": 165000,
+    "totalDiscount": 0,
+    "taxAmount": 0,
+    "shippingCost": 100,
+    "total": 165100,
+    "currency": "BDT",
+    "source": "web",
+    "placedAt": "2024-12-21T18:30:00Z",
+    "expiresAt": "2024-12-22T18:30:00Z"
+  }
+]

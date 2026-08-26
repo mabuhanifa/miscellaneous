@@ -1,0 +1,275 @@
+[
+  {
+    "firstName": "Ahmed",
+    "lastName": "Hassan",
+    "email": "ahmed.hassan@example.com",
+    "phone": "+8801712345683",
+    "dateOfBirth": "1990-05-15T00:00:00.000Z",
+    "gender": "male",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+    "addresses": [
+      {
+        "type": "home",
+        "name": "Ahmed Hassan",
+        "phone": "+8801712345683",
+        "address": "House 123, Road 5, Block C",
+        "division": "Dhaka",
+        "district": "Dhaka",
+        "thana": "Dhanmondi",
+        "postalCode": "1205",
+        "landmark": "Near Dhanmondi Lake",
+        "isDefault": true,
+        "isActive": true
+      }
+    ],
+    "preferences": {
+      "language": "en",
+      "currency": "BDT",
+      "notifications": {
+        "email": true,
+        "sms": true,
+        "whatsapp": false,
+        "orderUpdates": true,
+        "promotions": true
+      },
+      "paymentMethods": [
+        {
+          "type": "bkash",
+          "isPreferred": true
+        },
+        {
+          "type": "cod",
+          "isPreferred": false
+        }
+      ]
+    },
+    "analytics": {
+      "totalOrders": 5,
+      "totalSpent": 25000,
+      "averageOrderValue": 5000,
+      "lastOrderDate": "2024-12-15T00:00:00.000Z",
+      "firstOrderDate": "2024-08-10T00:00:00.000Z",
+      "lifetimeValue": 25000,
+      "loyaltyPoints": 250,
+      "customerSegment": "regular"
+    },
+    "behavior": {
+      "favoriteProducts": [],
+      "wishlist": [],
+      "recentlyViewed": [],
+      "searchHistory": [
+        {
+          "query": "smartphone",
+          "searchedAt": "2024-12-20T00:00:00.000Z"
+        },
+        {
+          "query": "laptop",
+          "searchedAt": "2024-12-18T00:00:00.000Z"
+        }
+      ]
+    },
+    "isActive": true,
+    "isVerified": true,
+    "emailVerified": true,
+    "phoneVerified": true,
+    "registrationSource": "web",
+    "tags": ["regular-customer", "tech-enthusiast"]
+  },
+  {
+    "firstName": "Fatima",
+    "lastName": "Begum",
+    "email": "fatima.begum@example.com",
+    "phone": "+8801812345684",
+    "dateOfBirth": "1985-08-22T00:00:00.000Z",
+    "gender": "female",
+    "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150",
+    "addresses": [
+      {
+        "type": "home",
+        "name": "Fatima Begum",
+        "phone": "+8801812345684",
+        "address": "Flat 4B, Green Tower",
+        "division": "Chittagong",
+        "district": "Chittagong",
+        "thana": "Agrabad",
+        "postalCode": "4100",
+        "landmark": "Opposite City Hospital",
+        "isDefault": true,
+        "isActive": true
+      },
+      {
+        "type": "office",
+        "name": "Fatima Begum",
+        "phone": "+8801812345684",
+        "address": "Office 302, Business Center",
+        "division": "Chittagong",
+        "district": "Chittagong",
+        "thana": "Nasirabad",
+        "postalCode": "4220",
+        "isDefault": false,
+        "isActive": true
+      }
+    ],
+    "preferences": {
+      "language": "bn",
+      "currency": "BDT",
+      "notifications": {
+        "email": true,
+        "sms": true,
+        "whatsapp": true,
+        "orderUpdates": true,
+        "promotions": false
+      }
+    },
+    "analytics": {
+      "totalOrders": 12,
+      "totalSpent": 85000,
+      "averageOrderValue": 7083,
+      "lastOrderDate": "2024-12-22T00:00:00.000Z",
+      "firstOrderDate": "2024-03-15T00:00:00.000Z",
+      "lifetimeValue": 85000,
+      "loyaltyPoints": 850,
+      "customerSegment": "vip"
+    },
+    "isActive": true,
+    "isVerified": true,
+    "emailVerified": true,
+    "phoneVerified": true,
+    "registrationSource": "mobile",
+    "tags": ["vip-customer", "fashion-lover"]
+  },
+  {
+    "firstName": "Mohammad",
+    "lastName": "Ali",
+    "email": "mohammad.ali@example.com",
+    "phone": "+8801912345685",
+    "dateOfBirth": "1992-12-03T00:00:00.000Z",
+    "gender": "male",
+    "addresses": [
+      {
+        "type": "home",
+        "name": "Mohammad Ali",
+        "phone": "+8801912345685",
+        "address": "Village: Rampur, Post: Savar",
+        "division": "Dhaka",
+        "district": "Dhaka",
+        "thana": "Savar",
+        "postalCode": "1340",
+        "isDefault": true,
+        "isActive": true
+      }
+    ],
+    "preferences": {
+      "language": "bn",
+      "currency": "BDT",
+      "notifications": {
+        "email": false,
+        "sms": true,
+        "whatsapp": false,
+        "orderUpdates": true,
+        "promotions": false
+      }
+    },
+    "analytics": {
+      "totalOrders": 2,
+      "totalSpent": 3500,
+      "averageOrderValue": 1750,
+      "lastOrderDate": "2024-11-20T00:00:00.000Z",
+      "firstOrderDate": "2024-10-05T00:00:00.000Z",
+      "lifetimeValue": 3500,
+      "loyaltyPoints": 35,
+      "customerSegment": "regular"
+    },
+    "isActive": true,
+    "isVerified": true,
+    "emailVerified": false,
+    "phoneVerified": true,
+    "registrationSource": "web",
+    "tags": ["new-customer"]
+  },
+  {
+    "firstName": "Rashida",
+    "lastName": "Khatun",
+    "email": "rashida.khatun@example.com",
+    "phone": "+8801612345686",
+    "dateOfBirth": "1988-04-18T00:00:00.000Z",
+    "gender": "female",
+    "addresses": [
+      {
+        "type": "home",
+        "name": "Rashida Khatun",
+        "phone": "+8801612345686",
+        "address": "House 45, Sector 7",
+        "division": "Rajshahi",
+        "district": "Rajshahi",
+        "thana": "Boalia",
+        "postalCode": "6000",
+        "isDefault": true,
+        "isActive": true
+      }
+    ],
+    "analytics": {
+      "totalOrders": 0,
+      "totalSpent": 0,
+      "averageOrderValue": 0,
+      "lifetimeValue": 0,
+      "loyaltyPoints": 0,
+      "customerSegment": "new"
+    },
+    "isActive": true,
+    "isVerified": false,
+    "emailVerified": false,
+    "phoneVerified": false,
+    "registrationSource": "web",
+    "tags": ["new-registration"]
+  },
+  {
+    "firstName": "Kamal",
+    "lastName": "Uddin",
+    "email": "kamal.uddin@example.com",
+    "phone": "+8801512345687",
+    "dateOfBirth": "1975-09-12T00:00:00.000Z",
+    "gender": "male",
+    "addresses": [
+      {
+        "type": "home",
+        "name": "Kamal Uddin",
+        "phone": "+8801512345687",
+        "address": "Road 12, House 78, Khulna",
+        "division": "Khulna",
+        "district": "Khulna",
+        "thana": "Khulna Sadar",
+        "postalCode": "9000",
+        "isDefault": true,
+        "isActive": true
+      }
+    ],
+    "preferences": {
+      "language": "bn",
+      "currency": "BDT",
+      "notifications": {
+        "email": true,
+        "sms": true,
+        "whatsapp": false,
+        "orderUpdates": true,
+        "promotions": true
+      }
+    },
+    "analytics": {
+      "totalOrders": 25,
+      "totalSpent": 125000,
+      "averageOrderValue": 5000,
+      "lastOrderDate": "2024-12-25T00:00:00.000Z",
+      "firstOrderDate": "2023-06-10T00:00:00.000Z",
+      "lifetimeValue": 125000,
+      "loyaltyPoints": 1250,
+      "customerSegment": "vip"
+    },
+    "isActive": true,
+    "isVerified": true,
+    "emailVerified": true,
+    "phoneVerified": true,
+    "registrationSource": "web",
+    "tags": ["vip-customer", "loyal-customer", "frequent-buyer"]
+  }
+]

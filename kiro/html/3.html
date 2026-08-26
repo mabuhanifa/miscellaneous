@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Approved Experiences</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      /* Custom scrollbar for better aesthetics */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #d1d5db;
+        border-radius: 6px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #9ca3af;
+      }
+    </style>
+    <script>
+      // Optional: Custom color configuration for Tailwind
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "custom-blue": "#4361EE",
+              "custom-purple": "#888BF4",
+              "custom-dark-blue": "#0F1C42",
+              "light-blue-bg": "#F7F9FF",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-gray-800">
+    <!-- Scroll to Top Button -->
+    <button
+      onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      class="fixed bottom-5 right-5 z-50 p-3 bg-custom-blue text-white rounded-full shadow-lg hover:bg-blue-700 transition-colors"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </button>
+
+    <!-- Clients Section -->
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900">
+          Our Happy <span class="text-custom-purple">Clients</span>
+        </h2>
+        <p class="mt-4 max-w-3xl mx-auto text-gray-600 text-lg">
+          Unlock exclusive access to countless hotels, vacation homes, car
+          rental locations, and flights with our travel membership—crafted for
+          ultimate convenience and style.
+        </p>
+        <div class="flex justify-center items-center mt-8 space-x-2">
+          <img
+            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?w=100&h=100&fit=crop&q=80"
+            alt="Client 1"
+            class="w-12 h-12 rounded-full object-cover border-2 border-white"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&q=80"
+            alt="Client 2"
+            class="w-12 h-12 rounded-full object-cover border-2 border-white"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&q=80"
+            alt="Client 3"
+            class="w-12 h-12 rounded-full object-cover border-2 border-white -ml-3"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&q=80"
+            alt="Client 4"
+            class="w-12 h-12 rounded-full object-cover border-2 border-white -ml-3"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&q=80"
+            alt="Client 5"
+            class="w-12 h-12 rounded-full object-cover border-2 border-white -ml-3"
+          />
+        </div>
+
+        <div class="mt-12 relative flex items-center justify-center">
+          <button
+            class="hidden md:block absolute -left-8 text-gray-400 border border-gray-300 rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-100 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl">
+            <!-- Testimonial 1 (Left) -->
+            <div
+              class="text-left bg-light-blue-bg p-8 rounded-2xl hidden md:block opacity-60 transform scale-95"
+            >
+              <p class="text-gray-600">
+                "I've never experienced travel like this before. The wholesale
+                pricing is incredible, and the rewards program is a
+                game-changer. Highly recommend Approved Experiences!"
+              </p>
+              <div class="flex items-center mt-6">
+                <img
+                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop&q=80"
+                  alt="Malcolm Stevens"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div class="ml-4">
+                  <p class="font-semibold text-gray-900 flex items-center">
+                    Malcolm Stevens
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 text-blue-500 ml-1"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a.75.75 0 00-1.06-1.06L9 10.94l-1.72-1.72a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.06 0l4.25-4.25z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </p>
+                  <p class="text-sm text-gray-500">Luxury Travel Blogger</p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 2 (Center) -->
+            <div
+              class="text-left bg-white p-8 rounded-2xl shadow-xl border border-gray-100 relative"
+            >
+              <div
+                class="absolute -top-3 left-1/2 -translate-x-1/2 bg-white px-2"
+              >
+                <svg
+                  width="40"
+                  height="4"
+                  viewBox="0 0 40 4"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect y="0.5" width="8" height="3" rx="1.5" fill="#4361EE" />
+                  <rect
+                    x="16"
+                    y="0.5"
+                    width="8"
+                    height="3"
+                    rx="1.5"
+                    fill="#D1D5DB"
+                  />
+                  <rect
+                    x="32"
+                    y="0.5"
+                    width="8"
+                    height="3"
+                    rx="1.5"
+                    fill="#D1D5DB"
+                  />
+                </svg>
+              </div>
+              <p class="text-gray-600">
+                "The convenience and style of Approved Experiences are
+                unmatched. Booking flights and hotels has never been easier, and
+                the discounts are fantastic. A must-have for any traveler!"
+              </p>
+              <div class="flex items-center mt-6">
+                <img
+                  src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&q=80"
+                  alt="Emily White"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div class="ml-4">
+                  <p class="font-semibold text-gray-900 flex items-center">
+                    Emily White
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 text-blue-500 ml-1"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a.75.75 0 00-1.06-1.06L9 10.94l-1.72-1.72a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.06 0l4.25-4.25z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </p>
+                  <p class="text-sm text-gray-500">Travel Enthusiast</p>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonial 3 (Right) -->
+            <div
+              class="text-left bg-light-blue-bg p-8 rounded-2xl hidden md:block opacity-60 transform scale-95"
+            >
+              <p class="text-gray-600">
+                "I'm saving so much money using Approved Experiences! The
+                platform is easy to use, and the customer service is excellent.
+                I'm telling all my friends about this!"
+              </p>
+              <div class="flex items-center mt-6">
+                <img
+                  src="https://images.unsplash.com/photo-1610276198568-eb6d0ff53e48?w=100&h=100&fit=crop&q=80"
+                  alt="Yuki Tanaka"
+                  class="w-12 h-12 rounded-full object-cover"
+                />
+                <div class="ml-4">
+                  <p class="font-semibold text-gray-900 flex items-center">
+                    Yuki Tanaka
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 text-blue-500 ml-1"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a.75.75 0 00-1.06-1.06L9 10.94l-1.72-1.72a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.06 0l4.25-4.25z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </p>
+                  <p class="text-sm text-gray-500">Budget Traveler</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="hidden md:block absolute -right-8 text-white bg-custom-blue rounded-full w-12 h-12 flex items-center justify-center hover:bg-blue-700 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-8 flex md:hidden justify-center space-x-4">
+          <button
+            class="text-gray-400 border border-gray-300 rounded-full w-12 h-12 flex items-center justify-center hover:bg-gray-100 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <button
+            class="text-white bg-custom-blue rounded-full w-12 h-12 flex items-center justify-center hover:bg-blue-700 transition"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-16 md:py-24 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900">
+          Pricing <span class="text-custom-purple">Plans</span>
+        </h2>
+        <p class="mt-4 max-w-3xl mx-auto text-gray-600 text-lg">
+          Unlock exclusive access to countless hotels, vacation homes, car
+          rental locations, and flights with our travel membership—crafted for
+          ultimate convenience and style.
+        </p>
+
+        <div
+          class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto text-left"
+        >
+          <!-- Gold Plan -->
+          <div
+            class="bg-light-blue-bg p-8 rounded-3xl border border-gray-200 flex flex-col"
+          >
+            <h3 class="text-2xl font-bold">Gold</h3>
+            <p class="text-gray-500 mt-1">Unlock benefits that include</p>
+            <div class="my-6">
+              <span class="text-5xl font-extrabold text-gray-900">$699</span>
+              <span class="text-xl font-bold text-gray-400 line-through ml-2"
+                >$799</span
+              >
+              <span class="text-gray-500">/ year</span>
+            </div>
+            <a
+              href="#"
+              class="w-full text-center border border-gray-300 text-gray-800 font-semibold py-3 rounded-full hover:bg-gray-100 transition"
+              >Get Started</a
+            >
+            <div class="mt-8 space-y-4 flex-grow">
+              <p class="font-semibold text-gray-900">
+                Unlock benefits that include
+              </p>
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Hotels
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Cruises
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Car Rentals
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Platinum Plan -->
+          <div
+            class="bg-custom-blue text-white p-8 rounded-3xl shadow-2xl shadow-blue-200 flex flex-col transform md:scale-105"
+          >
+            <h3 class="text-2xl font-bold">Platinum</h3>
+            <p class="text-blue-200 mt-1">
+              Premium luxury travel experience with the best value.
+            </p>
+            <div class="my-6">
+              <span class="text-5xl font-extrabold">$999</span>
+              <span class="text-xl font-bold text-blue-300 line-through ml-2"
+                >$1,199</span
+              >
+              <span class="text-blue-200">/ year</span>
+            </div>
+            <a
+              href="#"
+              class="w-full text-center bg-white text-custom-blue font-semibold py-3 rounded-full hover:bg-gray-100 transition"
+              >Get Started</a
+            >
+            <div class="mt-8 space-y-4 flex-grow">
+              <p class="font-semibold text-white">
+                Unlock benefits that include
+              </p>
+              <ul class="space-y-3 text-blue-200">
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-white mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Hotels
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-white mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Cruises
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-white mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Car Rentals
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-white mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Villas & Luxury Homes
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-white mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Value Guarantee
+                </li>
+                <li class="flex items-center font-semibold text-white">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Friends & Family Benefit Sharing
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Diamond Plan -->
+          <div
+            class="bg-light-blue-bg p-8 rounded-3xl border border-gray-200 flex flex-col md:col-span-2 lg:col-span-1"
+          >
+            <h3 class="text-2xl font-bold">Diamond</h3>
+            <p class="text-gray-500 mt-1">
+              Ultimate luxury travel experience with exclusive benefits.
+            </p>
+            <div class="my-6">
+              <span class="text-5xl font-extrabold text-gray-900">$1,499</span>
+              <span class="text-xl font-bold text-gray-400 line-through ml-2"
+                >$1699</span
+              >
+              <span class="text-gray-500">/ year</span>
+            </div>
+            <a
+              href="#"
+              class="w-full text-center border border-gray-300 text-gray-800 font-semibold py-3 rounded-full hover:bg-gray-100 transition"
+              >Get Started</a
+            >
+            <div class="mt-8 space-y-4 flex-grow">
+              <p class="font-semibold text-gray-900">
+                Unlock benefits that include
+              </p>
+              <ul class="space-y-3 text-gray-600">
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Hotels
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Cruises
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Car Rentals
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Flights
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Villas & Luxury Homes
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Reward Credits
+                </li>
+                <li class="flex items-center">
+                  <svg
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path></svg
+                  >Value Guarantee
+                </li>
+                <li class="flex items-center text-gray-800 font-medium">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Friends & Family Benefit Sharing
+                </li>
+                <li class="flex items-center text-gray-800 font-medium">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Approved Lux 24/7 Concierge
+                </li>
+                <li class="flex items-center text-gray-800 font-medium">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-5 h-5 text-custom-blue mr-2"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  Boomerang Rewards
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a
+          href="#"
+          class="mt-12 inline-block bg-custom-blue text-white font-semibold px-8 py-4 rounded-full hover:bg-blue-700 transition"
+          >View Detailed Comparison</a
+        >
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="py-16 md:py-24">
+      <div class="container mx-auto px-6">
+        <div
+          class="rounded-3xl p-10 md:p-20 text-center bg-light-blue-bg bg-[radial-gradient(#d8e3ff_1px,transparent_1px)] [background-size:16px_16px]"
+        >
+          <h2 class="text-3xl md:text-5xl font-extrabold text-gray-900">
+            Contact Us
+          </h2>
+          <p class="mt-4 text-gray-600 text-lg">
+            Join today or contact our team for more information.
+          </p>
+          <div class="mt-8 flex justify-center items-center space-x-4">
+            <a
+              href="#"
+              class="bg-custom-blue text-white font-semibold px-8 py-3 rounded-full hover:bg-blue-700 transition"
+              >Join Now</a
+            >
+            <a
+              href="#"
+              class="bg-white border border-gray-300 text-gray-800 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 transition"
+              >Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="bg-custom-dark-blue text-white pt-24 -mt-12 rounded-t-[40px]"
+    >
+      <div class="container mx-auto px-6">
+        <div
+          class="bg-white text-gray-900 rounded-3xl p-8 md:p-12 -mt-36 mb-16 shadow-xl"
+        >
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <div>
+              <h3 class="text-2xl md:text-3xl font-bold leading-tight">
+                Want product news and updates? <br />Sign up for our newsletter.
+              </h3>
+              <p class="mt-2 text-gray-500">
+                We care about your data. Read our
+                <a href="#" class="text-custom-blue underline">Privacy Policy</a
+                >.
+              </p>
+            </div>
+            <div>
+              <form class="space-y-4">
+                <div
+                  class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-3"
+                >
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="flex-grow w-full px-4 py-3 rounded-full border border-gray-300 focus:ring-2 focus:ring-custom-blue focus:outline-none"
+                  />
+                  <button
+                    type="submit"
+                    class="bg-custom-blue text-white font-semibold px-8 py-3 rounded-full hover:bg-blue-700 transition"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+                <div class="flex items-center">
+                  <input
+                    id="terms"
+                    type="checkbox"
+                    class="h-4 w-4 rounded border-gray-300 text-custom-blue focus:ring-custom-blue"
+                  />
+                  <label for="terms" class="ml-2 block text-sm text-gray-600"
+                    >I agree to
+                    <a href="#" class="text-custom-blue underline"
+                      >Terms & Services</a
+                    ></label
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+          <div class="lg:col-span-2">
+            <!-- SVG Logo -->
+            <svg
+              width="200"
+              height="42"
+              viewBox="0 0 200 42"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="text-white"
+            >
+              <path
+                d="M40.1017 19.537C41.3855 17.5872 43.4357 16.2949 45.7412 16.2949C49.3377 16.2949 52.2612 18.9103 52.2612 22.427C52.2612 25.8638 49.3377 28.5592 45.8211 28.5592C43.5156 28.5592 41.5453 27.2669 40.3414 25.477L40.0218 25.7966L41.3855 31.9126H37.3892L34.1932 20.3364C33.6338 18.5466 31.8441 17.3342 29.8738 17.3342H24.3638L24.1241 18.8267L30.1935 18.8267C30.993 18.8267 31.5524 19.3061 31.6323 20.0967L29.3268 20.0967C26.1308 20.0967 23.4354 22.7921 23.4354 26.068C23.4354 29.344 26.1308 31.9926 29.3268 31.9926H40.9852L40.1017 19.537ZM31.5524 23.4664H29.3268C27.9631 23.4664 26.8795 24.6388 26.8795 26.068C26.8795 27.4973 27.9631 28.5592 29.3268 28.5592H31.5524V23.4664Z"
+                fill="currentColor"
+              />
+              <text
+                x="58"
+                y="32"
+                font-family="Inter, sans-serif"
+                font-size="20"
+                font-weight="bold"
+                fill="currentColor"
+              >
+                Approved
+              </text>
+              <text
+                x="58"
+                y="16"
+                font-family="Inter, sans-serif"
+                font-size="12"
+                fill="#9ca3af"
+              >
+                EXPERIENCES
+              </text>
+              <path
+                d="M49.6277 2.14621C53.7431 -0.715403 59.0371 2.45789 57.9712 6.84365L55.2731 16.9678L30.2915 2.50291C29.6202 2.05267 29.3872 1.16851 29.7408 0.478954L30.2116 0L38.4328 12.3963C38.9749 13.1979 40.0135 13.3392 40.751 12.7214L49.6277 2.14621Z"
+                fill="currentColor"
+              />
+            </svg>
+
+            <p class="mt-4 text-gray-400">
+              Join our community for exclusive travel experiences.
+            </p>
+            <div class="flex space-x-4 mt-6">
+              <a
+                href="#"
+                class="w-8 h-8 flex items-center justify-center border border-gray-600 rounded-full text-gray-400 hover:text-white hover:border-white transition"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 flex items-center justify-center border border-gray-600 rounded-full text-gray-400 hover:text-white hover:border-white transition"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 flex items-center justify-center border border-gray-600 rounded-full text-gray-400 hover:text-white hover:border-white transition"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 16 16">
+                  <path
+                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="#"
+                class="w-8 h-8 flex items-center justify-center border border-gray-600 rounded-full text-gray-400 hover:text-white hover:border-white transition"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.85s.012-3.584.07-4.85c.148-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.85-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44 1.441-.645 1.441-1.44-.645-1.44-1.441-1.44z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg">Navigation</h4>
+            <ul class="mt-4 space-y-3 text-gray-400">
+              <li>
+                <a href="#" class="hover:text-white transition">Traveler 2.0</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Contact</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Concierge</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Company</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-white transition">Privacy</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg">Resource</h4>
+            <ul class="mt-4 space-y-3 text-gray-400">
+              <li><a href="#" class="hover:text-white transition">FAQs</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg">Contact</h4>
+            <ul class="mt-4 space-y-3 text-gray-400">
+              <li>Miami Florida</li>
+              <li>
+                <a
+                  href="mailto:support@approvedexperiences.com"
+                  class="hover:text-white transition"
+                  >support@approvedexperiences.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+18666781411" class="hover:text-white transition"
+                  >+1 (866) 678-1411</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 py-6 border-t border-gray-700 text-center text-gray-500 text-sm"
+        >
+          &copy; 2025 Approved Experiences, Inc. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

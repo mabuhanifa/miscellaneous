@@ -1,0 +1,215 @@
+[
+  {
+    "name": "Electronics",
+    "slug": "electronics",
+    "description": "Latest electronic gadgets and devices",
+    "parent": null,
+    "level": 0,
+    "path": "",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400",
+      "alt": "Electronics Category"
+    },
+    "seo": {
+      "metaTitle": "Electronics - Latest Gadgets & Devices",
+      "metaDescription": "Shop the latest electronics, smartphones, laptops, and gadgets in Bangladesh",
+      "keywords": [
+        "electronics",
+        "gadgets",
+        "smartphones",
+        "laptops",
+        "technology"
+      ]
+    },
+    "isActive": true,
+    "sortOrder": 1,
+    "_seedId": "electronics"
+  },
+  {
+    "name": "Smartphones",
+    "slug": "smartphones",
+    "description": "Latest smartphones and mobile devices",
+    "parentSlug": "electronics",
+    "level": 1,
+    "image": {
+      "url": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400",
+      "alt": "Smartphones"
+    },
+    "seo": {
+      "metaTitle": "Smartphones - Latest Mobile Phones",
+      "metaDescription": "Buy latest smartphones from top brands in Bangladesh",
+      "keywords": ["smartphones", "mobile phones", "android", "iphone"]
+    },
+    "isActive": true,
+    "sortOrder": 1,
+    "_seedId": "smartphones"
+  },
+  {
+    "name": "Laptops",
+    "slug": "laptops",
+    "description": "Laptops and computers for work and gaming",
+    "parentSlug": "electronics",
+    "level": 1,
+    "image": {
+      "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400",
+      "alt": "Laptops"
+    },
+    "seo": {
+      "metaTitle": "Laptops - Gaming & Business Laptops",
+      "metaDescription": "Shop laptops for gaming, business, and personal use in Bangladesh",
+      "keywords": ["laptops", "computers", "gaming laptops", "business laptops"]
+    },
+    "isActive": true,
+    "sortOrder": 2,
+    "_seedId": "laptops"
+  },
+  {
+    "name": "Fashion",
+    "slug": "fashion",
+    "description": "Trendy clothing and accessories for men and women",
+    "parent": null,
+    "level": 0,
+    "path": "",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400",
+      "alt": "Fashion Category"
+    },
+    "seo": {
+      "metaTitle": "Fashion - Trendy Clothing & Accessories",
+      "metaDescription": "Shop latest fashion trends, clothing, and accessories in Bangladesh",
+      "keywords": ["fashion", "clothing", "accessories", "trendy", "style"]
+    },
+    "isActive": true,
+    "sortOrder": 2,
+    "_seedId": "fashion"
+  },
+  {
+    "name": "Men's Clothing",
+    "slug": "mens-clothing",
+    "description": "Stylish clothing for men",
+    "parentSlug": "fashion",
+    "level": 1,
+    "image": {
+      "url": "https://images.unsplash.com/photo-1516257984-b1b4d707412e?w=400",
+      "alt": "Men's Clothing"
+    },
+    "seo": {
+      "metaTitle": "Men's Clothing - Shirts, Pants & More",
+      "metaDescription": "Shop men's clothing including shirts, pants, and formal wear",
+      "keywords": [
+        "mens clothing",
+        "shirts",
+        "pants",
+        "formal wear",
+        "casual wear"
+      ]
+    },
+    "isActive": true,
+    "sortOrder": 1,
+    "_seedId": "mens-clothing"
+  },
+  {
+    "name": "Women's Clothing",
+    "slug": "womens-clothing",
+    "description": "Fashionable clothing for women",
+    "parentSlug": "fashion",
+    "level": 1,
+    "image": {
+      "url": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400",
+      "alt": "Women's Clothing"
+    },
+    "seo": {
+      "metaTitle": "Women's Clothing - Dresses, Tops & More",
+      "metaDescription": "Shop women's clothing including dresses, tops, and ethnic wear",
+      "keywords": [
+        "womens clothing",
+        "dresses",
+        "tops",
+        "ethnic wear",
+        "sarees"
+      ]
+    },
+    "isActive": true,
+    "sortOrder": 2,
+    "_seedId": "womens-clothing"
+  },
+  {
+    "name": "Home & Living",
+    "slug": "home-living",
+    "description": "Home decor, furniture, and living essentials",
+    "parent": null,
+    "level": 0,
+    "path": "",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+      "alt": "Home & Living"
+    },
+    "seo": {
+      "metaTitle": "Home & Living - Furniture & Decor",
+      "metaDescription": "Shop home furniture, decor, and living essentials in Bangladesh",
+      "keywords": ["home decor", "furniture", "living", "interior", "household"]
+    },
+    "isActive": true,
+    "sortOrder": 3,
+    "_seedId": "home-living"
+  },
+  {
+    "name": "Furniture",
+    "slug": "furniture",
+    "description": "Quality furniture for your home",
+    "parentSlug": "home-living",
+    "level": 1,
+    "image": {
+      "url": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400",
+      "alt": "Furniture"
+    },
+    "seo": {
+      "metaTitle": "Furniture - Sofas, Beds & More",
+      "metaDescription": "Shop quality furniture including sofas, beds, and dining sets",
+      "keywords": ["furniture", "sofas", "beds", "dining sets", "chairs"]
+    },
+    "isActive": true,
+    "sortOrder": 1,
+    "_seedId": "furniture"
+  },
+  {
+    "name": "Books",
+    "slug": "books",
+    "description": "Books, educational materials, and literature",
+    "parent": null,
+    "level": 0,
+    "path": "",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400",
+      "alt": "Books"
+    },
+    "seo": {
+      "metaTitle": "Books - Educational & Literature",
+      "metaDescription": "Shop books, educational materials, and literature in Bangladesh",
+      "keywords": ["books", "education", "literature", "textbooks", "novels"]
+    },
+    "isActive": true,
+    "sortOrder": 4,
+    "_seedId": "books"
+  },
+  {
+    "name": "Sports & Fitness",
+    "slug": "sports-fitness",
+    "description": "Sports equipment and fitness gear",
+    "parent": null,
+    "level": 0,
+    "path": "",
+    "image": {
+      "url": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400",
+      "alt": "Sports & Fitness"
+    },
+    "seo": {
+      "metaTitle": "Sports & Fitness - Equipment & Gear",
+      "metaDescription": "Shop sports equipment and fitness gear in Bangladesh",
+      "keywords": ["sports", "fitness", "equipment", "gym", "exercise"]
+    },
+    "isActive": true,
+    "sortOrder": 5,
+    "_seedId": "sports-fitness"
+  }
+]

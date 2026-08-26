@@ -1,0 +1,170 @@
+[
+  {
+    "email": "admin@bangladeshecommerce.com",
+    "password": "Admin123!",
+    "role": "admin",
+    "profile": {
+      "firstName": "System",
+      "lastName": "Administrator",
+      "phone": "+8801712345678",
+      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150",
+      "dateOfBirth": "1985-01-15T00:00:00.000Z",
+      "gender": "male",
+      "address": {
+        "street": "123 Admin Street",
+        "district": "Dhaka",
+        "thana": "Dhanmondi",
+        "postalCode": "1205",
+        "country": "Bangladesh"
+      }
+    },
+    "isActive": true,
+    "isEmailVerified": true,
+    "isPhoneVerified": true,
+    "preferences": {
+      "language": "en",
+      "currency": "BDT",
+      "timezone": "Asia/Dhaka",
+      "notifications": {
+        "email": true,
+        "sms": true,
+        "push": true
+      }
+    },
+    "metadata": {
+      "registrationIP": "127.0.0.1",
+      "referralSource": "direct"
+    }
+  },
+  {
+    "email": "merchant1@example.com",
+    "password": "Merchant123!",
+    "role": "merchant",
+    "profile": {
+      "firstName": "Karim",
+      "lastName": "Rahman",
+      "phone": "+8801812345679",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150",
+      "dateOfBirth": "1988-03-22T00:00:00.000Z",
+      "gender": "male",
+      "address": {
+        "street": "456 Business Avenue",
+        "district": "Chittagong",
+        "thana": "Agrabad",
+        "postalCode": "4100",
+        "country": "Bangladesh"
+      }
+    },
+    "isActive": true,
+    "isEmailVerified": true,
+    "isPhoneVerified": true,
+    "preferences": {
+      "language": "en",
+      "currency": "BDT",
+      "timezone": "Asia/Dhaka",
+      "notifications": {
+        "email": true,
+        "sms": true,
+        "push": true
+      }
+    }
+  },
+  {
+    "email": "merchant2@example.com",
+    "password": "Merchant123!",
+    "role": "merchant",
+    "profile": {
+      "firstName": "Fatima",
+      "lastName": "Khatun",
+      "phone": "+8801912345680",
+      "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150",
+      "dateOfBirth": "1990-07-10T00:00:00.000Z",
+      "gender": "female",
+      "address": {
+        "street": "789 Commerce Road",
+        "district": "Sylhet",
+        "thana": "Zindabazar",
+        "postalCode": "3100",
+        "country": "Bangladesh"
+      }
+    },
+    "isActive": true,
+    "isEmailVerified": true,
+    "isPhoneVerified": true,
+    "preferences": {
+      "language": "bn",
+      "currency": "BDT",
+      "timezone": "Asia/Dhaka",
+      "notifications": {
+        "email": true,
+        "sms": true,
+        "push": false
+      }
+    }
+  },
+  {
+    "email": "delivery1@example.com",
+    "password": "Delivery123!",
+    "role": "delivery_agent",
+    "profile": {
+      "firstName": "Abdul",
+      "lastName": "Hasan",
+      "phone": "+8801612345681",
+      "avatar": "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=150",
+      "dateOfBirth": "1992-11-05T00:00:00.000Z",
+      "gender": "male",
+      "address": {
+        "street": "321 Delivery Lane",
+        "district": "Dhaka",
+        "thana": "Gulshan",
+        "postalCode": "1212",
+        "country": "Bangladesh"
+      }
+    },
+    "isActive": true,
+    "isEmailVerified": true,
+    "isPhoneVerified": true,
+    "preferences": {
+      "language": "en",
+      "currency": "BDT",
+      "timezone": "Asia/Dhaka",
+      "notifications": {
+        "email": true,
+        "sms": true,
+        "push": true
+      }
+    }
+  },
+  {
+    "email": "delivery2@example.com",
+    "password": "Delivery123!",
+    "role": "delivery_agent",
+    "profile": {
+      "firstName": "Rashid",
+      "lastName": "Ahmed",
+      "phone": "+8801712345682",
+      "dateOfBirth": "1989-04-18T00:00:00.000Z",
+      "gender": "male",
+      "address": {
+        "street": "654 Transport Street",
+        "district": "Rajshahi",
+        "thana": "Boalia",
+        "postalCode": "6000",
+        "country": "Bangladesh"
+      }
+    },
+    "isActive": true,
+    "isEmailVerified": true,
+    "isPhoneVerified": true,
+    "preferences": {
+      "language": "bn",
+      "currency": "BDT",
+      "timezone": "Asia/Dhaka",
+      "notifications": {
+        "email": false,
+        "sms": true,
+        "push": true
+      }
+    }
+  }
+]

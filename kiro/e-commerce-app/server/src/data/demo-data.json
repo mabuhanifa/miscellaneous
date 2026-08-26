@@ -1,0 +1,28 @@
+{
+  "description": "Complete demo data for Bangladesh eCommerce Platform",
+  "version": "1.0.0",
+  "lastUpdated": "2024-12-25",
+  "includes": [
+    "users.json",
+    "categories.json",
+    "products.json",
+    "customers.json",
+    "orders.json",
+    "settings.json"
+  ],
+  "seedingOrder": [
+    "settings",
+    "users",
+    "categories",
+    "products",
+    "customers",
+    "orders"
+  ],
+  "notes": [
+    "All demo data files have been updated to match Mongoose model schemas",
+    "References between models use temporary fields (like categorySlug, parentSlug) that are resolved during seeding",
+    "Passwords in users.json will be hashed during seeding",
+    "Date fields are in ISO format for proper MongoDB storage",
+    "ObjectId references are resolved during the seeding process"
+  ]
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Received</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+        .content {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 0 0 10px 10px;
+        }
+        .payment-details {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .amount {
+            font-size: 2em;
+            font-weight: bold;
+            color: #28a745;
+            text-align: center;
+            margin: 15px 0;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .status-badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>💳 Payment Received</h1>
+        <p>Thank you for your payment, {{customerName}}!</p>
+    </div>
+    
+    <div class="content">
+        <div class="payment-details">
+            <h2>Payment Confirmation</h2>
+            
+            <p><strong>Order Number:</strong> {{orderNumber}}</p>
+            <p><strong>Payment Status:</strong> <span class="status-badge">✅ PAID</span></p>
+            <p><strong>Payment Date:</strong> {{formatDate paymentDate}}</p>
+            
+            <div class="amount">
+                {{currency}} {{formatPrice orderTotal}}
+            </div>
+            
+            <p><strong>Payment Method:</strong> {{paymentMethod}}</p>
+            {{#if transactionId}}
+            <p><strong>Transaction ID:</strong> {{transactionId}}</p>
+            {{/if}}
+        </div>
+        
+        <h3>What happens next?</h3>
+        <ul>
+            <li>Your payment has been successfully processed</li>
+            <li>We'll now prepare your order for shipping</li>
+            <li>You'll receive a shipping confirmation email with tracking details</li>
+            <li>Your order will be delivered within 2-3 business days</li>
+        </ul>
+        
+        <a href="{{storeUrl}}/orders/{{orderNumber}}" class="button">View Order Details</a>
+        
+        <h3>Order Summary</h3>
+        <div class="payment-details">
+            {{#each items}}
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #eee;">
+                <div>
+                    <strong>{{name}}</strong><br>
+                    <small>Quantity: {{quantity}}</small>
+                </div>
+                <div>{{../currency}} {{formatPrice price}}</div>
+            </div>
+            {{/each}}
+            
+            <div style="font-weight: bold; font-size: 1.1em; text-align: right; margin-top: 15px; padding-top: 15px; border-top: 2px solid #28a745;">
+                Total Paid: {{currency}} {{formatPrice orderTotal}}
+            </div>
+        </div>
+        
+        <p>A receipt for this payment has been sent to your email address. Please keep it for your records.</p>
+        
+        <p>If you have any questions about your payment or order, please contact us at <a href="mailto:support@{{storeName}}.com">support@{{storeName}}.com</a></p>
+    </div>
+    
+    <div class="footer">
+        <p>Thank you for your business!</p>
+        <p>{{storeName}} - Your trusted online store</p>
+        <p><a href="{{storeUrl}}">Visit our store</a> | <a href="{{storeUrl}}/contact">Contact us</a></p>
+    </div>
+</body>
+</html>

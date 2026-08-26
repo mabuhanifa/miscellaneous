@@ -1,0 +1,268 @@
+[
+  {
+    "name": "Samsung Galaxy S23 Ultra",
+    "slug": "samsung-galaxy-s23-ultra",
+    "description": "The most powerful Galaxy smartphone with advanced camera system, S Pen, and premium design. Features a 6.8-inch Dynamic AMOLED display, 200MP camera, and all-day battery life.",
+    "shortDescription": "Premium flagship smartphone with 200MP camera and S Pen",
+    "categorySlug": "smartphones",
+    "tags": ["smartphone", "samsung", "flagship", "camera", "s-pen", "premium"],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=600",
+        "alt": "Samsung Galaxy S23 Ultra",
+        "isPrimary": true
+      }
+    ],
+    "variants": [
+      {
+        "sku": "SAMSUNG-S23U-256-BLACK",
+        "name": "256GB Phantom Black",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Phantom Black",
+          "ram": "12GB",
+          "display": "6.8 inch"
+        },
+        "price": 135000,
+        "comparePrice": 145000,
+        "stock": 25,
+        "weight": 0.234,
+        "dimensions": {
+          "length": 163.4,
+          "width": 78.1,
+          "height": 8.9,
+          "unit": "cm"
+        },
+        "barcode": "8806094559309"
+      },
+      {
+        "sku": "SAMSUNG-S23U-512-GREEN",
+        "name": "512GB Green",
+        "attributes": {
+          "storage": "512GB",
+          "color": "Green",
+          "ram": "12GB",
+          "display": "6.8 inch"
+        },
+        "price": 155000,
+        "comparePrice": 165000,
+        "stock": 15,
+        "weight": 0.234
+      }
+    ],
+    "seo": {
+      "metaTitle": "Samsung Galaxy S23 Ultra - Premium Smartphone",
+      "metaDescription": "Buy Samsung Galaxy S23 Ultra with 200MP camera, S Pen, and premium features in Bangladesh",
+      "keywords": [
+        "samsung",
+        "galaxy s23 ultra",
+        "smartphone",
+        "camera",
+        "s pen"
+      ]
+    },
+    "isActive": true,
+    "isFeatured": true,
+    "_seedId": "samsung-galaxy-s23-ultra"
+  },
+  {
+    "name": "iPhone 14 Pro Max",
+    "slug": "iphone-14-pro-max",
+    "description": "The ultimate iPhone experience with Dynamic Island, 48MP Main camera, and A16 Bionic chip. Features ProRAW and ProRes video recording capabilities.",
+    "shortDescription": "Premium iPhone with Dynamic Island and 48MP camera",
+    "categorySlug": "smartphones",
+    "tags": ["iphone", "apple", "premium", "camera", "dynamic-island", "pro"],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1663499482523-1c0c1bae4ce1?w=600",
+        "alt": "iPhone 14 Pro Max",
+        "isPrimary": true
+      }
+    ],
+    "variants": [
+      {
+        "sku": "IPHONE-14PM-128-PURPLE",
+        "name": "128GB Deep Purple",
+        "attributes": {
+          "storage": "128GB",
+          "color": "Deep Purple",
+          "display": "6.7 inch",
+          "chip": "A16 Bionic"
+        },
+        "price": 145000,
+        "stock": 20,
+        "weight": 0.24
+      },
+      {
+        "sku": "IPHONE-14PM-256-GOLD",
+        "name": "256GB Gold",
+        "attributes": {
+          "storage": "256GB",
+          "color": "Gold",
+          "display": "6.7 inch",
+          "chip": "A16 Bionic"
+        },
+        "price": 165000,
+        "stock": 12
+      }
+    ],
+    "isActive": true,
+    "isFeatured": true,
+    "_seedId": "iphone-14-pro-max"
+  },
+  {
+    "name": "MacBook Air M2",
+    "slug": "macbook-air-m2",
+    "description": "Supercharged by M2 chip, the redesigned MacBook Air is more portable than ever and delivers exceptional performance and battery life.",
+    "shortDescription": "Ultra-portable laptop with M2 chip and all-day battery",
+    "categorySlug": "laptops",
+    "tags": ["macbook", "apple", "laptop", "m2", "portable", "premium"],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=600",
+        "alt": "MacBook Air M2",
+        "isPrimary": true
+      }
+    ],
+    "variants": [
+      {
+        "sku": "MBA-M2-256-SILVER",
+        "name": "256GB Silver",
+        "attributes": {
+          "storage": "256GB SSD",
+          "color": "Silver",
+          "ram": "8GB",
+          "processor": "Apple M2",
+          "display": "13.6 inch"
+        },
+        "price": 125000,
+        "stock": 18,
+        "weight": 1.24
+      },
+      {
+        "sku": "MBA-M2-512-GOLD",
+        "name": "512GB Gold",
+        "attributes": {
+          "storage": "512GB SSD",
+          "color": "Midnight",
+          "ram": "8GB",
+          "processor": "Apple M2",
+          "display": "13.6 inch"
+        },
+        "price": 155000,
+        "stock": 10
+      }
+    ],
+    "isActive": true,
+    "isFeatured": true,
+    "_seedId": "macbook-air-m2"
+  },
+  {
+    "name": "Premium Cotton T-Shirt",
+    "slug": "premium-cotton-t-shirt",
+    "description": "High-quality 100% cotton t-shirt with comfortable fit and premium finish. Perfect for casual wear and everyday comfort.",
+    "shortDescription": "100% cotton t-shirt with premium quality and comfort",
+    "categorySlug": "mens-clothing",
+    "tags": ["t-shirt", "cotton", "casual", "comfortable", "premium", "mens"],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600",
+        "alt": "Premium Cotton T-Shirt",
+        "isPrimary": true
+      }
+    ],
+    "variants": [
+      {
+        "sku": "TSHIRT-COTTON-S-WHITE",
+        "name": "Small White",
+        "attributes": {
+          "size": "S",
+          "color": "White",
+          "material": "100% Cotton",
+          "fit": "Regular"
+        },
+        "price": 899,
+        "comparePrice": 1299,
+        "stock": 50,
+        "weight": 0.18
+      },
+      {
+        "sku": "TSHIRT-COTTON-M-BLACK",
+        "name": "Medium Black",
+        "attributes": {
+          "size": "M",
+          "color": "Black",
+          "material": "100% Cotton",
+          "fit": "Regular"
+        },
+        "price": 899,
+        "comparePrice": 1299,
+        "stock": 45
+      },
+      {
+        "sku": "TSHIRT-COTTON-L-NAVY",
+        "name": "Large Navy",
+        "attributes": {
+          "size": "L",
+          "color": "Navy",
+          "material": "100% Cotton",
+          "fit": "Regular"
+        },
+        "price": 999,
+        "stock": 35
+      }
+    ],
+    "isActive": true,
+    "isFeatured": false,
+    "_seedId": "premium-cotton-t-shirt"
+  },
+  {
+    "name": "Elegant Summer Dress",
+    "slug": "elegant-summer-dress",
+    "description": "Beautiful floral summer dress made from lightweight fabric. Perfect for casual outings and summer events.",
+    "shortDescription": "Lightweight floral dress perfect for summer",
+    "categorySlug": "womens-clothing",
+    "tags": ["dress", "summer", "floral", "elegant", "lightweight", "womens"],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600",
+        "alt": "Elegant Summer Dress",
+        "isPrimary": true
+      }
+    ],
+    "variants": [
+      {
+        "sku": "DRESS-SUMMER-S-FLORAL",
+        "name": "Small Floral Print",
+        "attributes": {
+          "size": "S",
+          "pattern": "Floral",
+          "material": "Cotton Blend",
+          "sleeve": "Sleeveless",
+          "length": "Midi"
+        },
+        "price": 2499,
+        "comparePrice": 3499,
+        "stock": 25,
+        "weight": 0.25
+      },
+      {
+        "sku": "DRESS-SUMMER-M-SOLID",
+        "name": "Medium Solid Blue",
+        "attributes": {
+          "size": "M",
+          "pattern": "Solid",
+          "material": "Cotton Blend",
+          "sleeve": "Short Sleeve",
+          "length": "Midi",
+          "color": "Blue"
+        },
+        "price": 2299,
+        "stock": 30
+      }
+    ],
+    "isActive": true,
+    "isFeatured": false,
+    "_seedId": "elegant-summer-dress"
+  }
+]

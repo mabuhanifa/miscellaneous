@@ -1,0 +1,167 @@
+[
+  {
+    "instanceId": "dev_instance_001",
+    "branding": {
+      "businessName": "Bangladesh eCommerce Store",
+      "logo": {
+        "url": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=200",
+        "alt": "Bangladesh eCommerce Store Logo"
+      },
+      "favicon": "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=32",
+      "primaryColor": "#2563eb",
+      "secondaryColor": "#64748b",
+      "accentColor": "#059669"
+    },
+    "domains": {
+      "primary": "localhost:3000",
+      "aliases": ["127.0.0.1:3000", "dev.bangladeshecommerce.com"],
+      "ssl": {
+        "enabled": false
+      }
+    },
+    "features": {
+      "multiLanguage": true,
+      "socialLogin": false,
+      "guestCheckout": true,
+      "wishlist": true,
+      "reviews": true,
+      "analytics": true,
+      "seo": true,
+      "notifications": {
+        "email": true,
+        "sms": true,
+        "whatsapp": false
+      }
+    },
+    "business": {
+      "address": {
+        "street": "123 Business Street",
+        "city": "Dhaka",
+        "district": "Dhaka",
+        "division": "Dhaka",
+        "postalCode": "1000",
+        "country": "Bangladesh"
+      },
+      "contact": {
+        "phone": "+8801700000000",
+        "email": "info@bangladeshecommerce.com",
+        "whatsapp": "+8801700000000",
+        "facebook": "https://facebook.com/bangladeshecommerce",
+        "instagram": "https://instagram.com/bangladeshecommerce"
+      },
+      "registration": {
+        "tradeLicense": "TRAD/DHAKA/123456",
+        "tin": "123456789012",
+        "vat": "VAT123456789"
+      }
+    },
+    "payment": {
+      "currency": "BDT",
+      "methods": {
+        "cod": {
+          "enabled": true,
+          "minAmount": 100,
+          "maxAmount": 50000
+        },
+        "sslcommerz": {
+          "enabled": true,
+          "storeId": "testbox",
+          "storePassword": "qwerty",
+          "sandbox": true
+        },
+        "bkash": {
+          "enabled": true,
+          "username": "sandboxTokenizedUser02",
+          "password": "sandboxTokenizedUser02@12345",
+          "appKey": "4f6o0cjiki2rfm34kfdadl1eqq",
+          "appSecret": "2is7hdktrekvrbljjh44ll3d9l1dtjo4pasmjvs5vl5qr3fug4b",
+          "sandbox": true
+        }
+      }
+    },
+    "shipping": {
+      "providers": {
+        "pathao": {
+          "enabled": true,
+          "clientId": "test_client_id",
+          "clientSecret": "test_client_secret",
+          "sandbox": true
+        },
+        "paperfly": {
+          "enabled": true,
+          "apiKey": "test_api_key",
+          "sandbox": true
+        },
+        "ecourier": {
+          "enabled": true,
+          "apiKey": "test_api_key",
+          "userId": "test_user_id",
+          "sandbox": true
+        }
+      },
+      "defaultProvider": "pathao",
+      "freeShippingThreshold": 1000
+    },
+    "localization": {
+      "defaultLanguage": "en",
+      "supportedLanguages": ["en", "bn"],
+      "timezone": "Asia/Dhaka",
+      "dateFormat": "DD/MM/YYYY",
+      "numberFormat": {
+        "decimal": ".",
+        "thousand": ","
+      }
+    },
+    "seo": {
+      "siteName": "Bangladesh eCommerce Store",
+      "tagline": "Your trusted online shopping destination in Bangladesh",
+      "description": "Shop the latest products from electronics to fashion at Bangladesh's premier eCommerce platform. Fast delivery, secure payments, and excellent customer service.",
+      "keywords": [
+        "ecommerce",
+        "bangladesh",
+        "online shopping",
+        "electronics",
+        "fashion",
+        "delivery"
+      ],
+      "googleAnalyticsId": "GA_MEASUREMENT_ID",
+      "facebookPixelId": "FB_PIXEL_ID",
+      "googleTagManagerId": "GTM_CONTAINER_ID"
+    },
+    "email": {
+      "provider": "smtp",
+      "smtp": {
+        "host": "smtp.gmail.com",
+        "port": 587,
+        "secure": false,
+        "username": "noreply@bangladeshecommerce.com",
+        "password": "app_password_here"
+      },
+      "fromAddress": "noreply@bangladeshecommerce.com",
+      "fromName": "Bangladesh eCommerce Store"
+    },
+    "sms": {
+      "provider": "local",
+      "local": {
+        "apiUrl": "https://api.sms.local/send",
+        "apiKey": "local_sms_api_key",
+        "fromNumber": "8809612345678"
+      }
+    },
+    "security": {
+      "jwtSecret": "dev-jwt-secret-key-change-in-production-very-long-and-secure",
+      "jwtExpiry": "24h",
+      "refreshTokenExpiry": "7d",
+      "passwordMinLength": 8,
+      "maxLoginAttempts": 5,
+      "lockoutDuration": 15
+    },
+    "system": {
+      "maintenanceMode": false,
+      "maintenanceMessage": "We are currently performing scheduled maintenance. Please check back soon.",
+      "allowedIPs": ["127.0.0.1", "::1"],
+      "maxFileSize": 5242880,
+      "allowedFileTypes": ["jpg", "jpeg", "png", "gif", "webp", "pdf"]
+    }
+  }
+]
