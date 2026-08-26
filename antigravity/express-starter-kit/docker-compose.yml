@@ -1,0 +1,22 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - '3000:3000'
+    environment:
+      - PORT=3000
+      - MONGODB_URL=mongodb://mongo:27017/express-starter
+      - JWT_SECRET=thisisasupersecretkeythatshouldbechangedinproduction
+      - JWT_ACCESS_EXPIRATION_MINUTES=30
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:latest
+    ports:
+      - '27017:27017'
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

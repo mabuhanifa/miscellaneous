@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIÈRE | Modern Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brand: {
+                            black: '#121212',
+                            gray: '#2A2A2A',
+                            beige: '#F5F5F0',
+                            accent: '#Cfb997'
+                        }
+                    },
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-brand-beige text-brand-black antialiased selection:bg-brand-black selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 transition-all duration-300 glass-panel border-b border-white/20">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="text-2xl font-serif font-semibold tracking-tight">LUMIÈRE</a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium tracking-wide">
+                <a href="#" class="hover:text-brand-accent transition-colors">NEW ARRIVALS</a>
+                <a href="#" class="hover:text-brand-accent transition-colors">COLLECTIONS</a>
+                <a href="#" class="hover:text-brand-accent transition-colors">ACCESSORIES</a>
+                <a href="#" class="hover:text-brand-accent transition-colors">EDITORIAL</a>
+            </div>
+
+            <!-- Icons -->
+            <div class="flex items-center space-x-6">
+                <button class="hover:scale-110 transition-transform">
+                    <i data-lucide="search" class="w-5 h-5"></i>
+                </button>
+                <button class="hover:scale-110 transition-transform relative">
+                    <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                    <span class="absolute -top-1 -right-1 w-2 h-2 bg-brand-black rounded-full"></span>
+                </button>
+                <button class="md:hidden">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        <!-- Background Image -->
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop" 
+                 alt="Fashion Model" 
+                 class="w-full h-full object-cover object-center brightness-90">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10 text-center text-white px-4 max-w-4xl mx-auto mt-16">
+            <p class="text-sm md:text-base font-medium tracking-[0.2em] mb-4 uppercase opacity-90 animate-fade-in-up">Spring Summer 2025</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-medium mb-8 leading-tight">
+                Elegance in <br/><span class="italic">Motion</span>
+            </h1>
+            <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                <a href="#collection" class="group relative px-8 py-4 bg-white text-brand-black min-w-[180px] font-medium overflow-hidden rounded-full transition-all hover:shadow-lg hover:shadow-white/20">
+                    <span class="relative z-10 group-hover:text-white transition-colors duration-300">EXPLORE COLLECTION</span>
+                    <div class="absolute inset-0 bg-brand-black transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300 ease-out"></div>
+                </a>
+                <a href="#" class="px-8 py-4 border border-white text-white min-w-[180px] font-medium rounded-full hover:bg-white/10 transition-all backdrop-blur-sm">
+                    WATCH FILM
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Categories -->
+    <section id="collection" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-serif mb-2">Curated Collections</h2>
+                <p class="text-gray-500">Discover the essence of modern luxury.</p>
+            </div>
+            <a href="#" class="hidden md:flex items-center gap-2 text-sm font-medium hover:translate-x-1 transition-transform">
+                VIEW ALL <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="group relative h-[500px] overflow-hidden rounded-2xl cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1000&auto=format&fit=crop" 
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Dresses">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full">
+                    <h3 class="text-2xl font-serif text-white mb-2">Ready to Wear</h3>
+                    <div class="h-0 overflow-hidden group-hover:h-8 transition-all duration-300">
+                        <span class="text-white/80 text-sm border-b border-white/40 pb-0.5">Shop Category</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group relative h-[500px] overflow-hidden rounded-2xl cursor-pointer md:-mt-12">
+                <img src="https://images.unsplash.com/photo-1550614000-4b9519e02d48?q=80&w=1000&auto=format&fit=crop" 
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Accessories">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full">
+                    <h3 class="text-2xl font-serif text-white mb-2">Accessories</h3>
+                    <div class="h-0 overflow-hidden group-hover:h-8 transition-all duration-300">
+                        <span class="text-white/80 text-sm border-b border-white/40 pb-0.5">Shop Category</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group relative h-[500px] overflow-hidden rounded-2xl cursor-pointer">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1000&auto=format&fit=crop" 
+                     class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="Footwear">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-0 left-0 p-8 w-full">
+                    <h3 class="text-2xl font-serif text-white mb-2">Footwear</h3>
+                    <div class="h-0 overflow-hidden group-hover:h-8 transition-all duration-300">
+                        <span class="text-white/80 text-sm border-b border-white/40 pb-0.5">Shop Category</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals / Product Grid -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-accent font-medium tracking-widest text-xs uppercase mb-3 block">This Week's Highlights</span>
+                <h2 class="text-4xl font-serif mb-6">New Arrivals</h2>
+                <p class="text-gray-500">Explore our latest additions, crafted with precision and designed for the modern aesthetic.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12">
+                <!-- Product 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1000&auto=format&fit=crop" 
+                             class="w-full h-full object-cover" alt="Product">
+                        <div class="absolute bottom-4 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white text-black px-6 py-2 rounded-full text-sm font-medium shadow-lg hover:bg-black hover:text-white transition-colors">
+                                Quick Add
+                            </button>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/80 backdrop-blur-sm px-2 py-1 rounded text-xs font-medium">NEW</div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-medium text-lg group-hover:text-brand-accent transition-colors">Silk Evening Dress</h3>
+                            <p class="text-gray-500 text-sm mt-1">Midnight Blue</p>
+                        </div>
+                        <span class="font-serif text-lg">$450</span>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1617922001439-4a2e6562f328?q=80&w=1000&auto=format&fit=crop" 
+                             class="w-full h-full object-cover" alt="Product">
+                        <div class="absolute bottom-4 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white text-black px-6 py-2 rounded-full text-sm font-medium shadow-lg hover:bg-black hover:text-white transition-colors">
+                                Quick Add
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-medium text-lg group-hover:text-brand-accent transition-colors">Cashmere Sweater</h3>
+                            <p class="text-gray-500 text-sm mt-1">Soft Beige</p>
+                        </div>
+                        <span class="font-serif text-lg">$280</span>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1532453288672-3a27e9be9efd?q=80&w=1000&auto=format&fit=crop" 
+                             class="w-full h-full object-cover" alt="Product">
+                        <div class="absolute bottom-4 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white text-black px-6 py-2 rounded-full text-sm font-medium shadow-lg hover:bg-black hover:text-white transition-colors">
+                                Quick Add
+                            </button>
+                        </div>
+                        <div class="absolute top-4 right-4 bg-red-500 text-white px-2 py-1 rounded text-xs font-medium">-20%</div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-medium text-lg group-hover:text-brand-accent transition-colors">Pleated Midi Skirt</h3>
+                            <p class="text-gray-500 text-sm mt-1">Emerald</p>
+                        </div>
+                        <span class="font-serif text-lg">$195</span>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="group cursor-pointer">
+                    <div class="relative aspect-[3/4] bg-gray-100 rounded-xl overflow-hidden mb-4">
+                        <img src="https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=1000&auto=format&fit=crop" 
+                             class="w-full h-full object-cover" alt="Product">
+                        <div class="absolute bottom-4 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <button class="bg-white text-black px-6 py-2 rounded-full text-sm font-medium shadow-lg hover:bg-black hover:text-white transition-colors">
+                                Quick Add
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-medium text-lg group-hover:text-brand-accent transition-colors">Structured Blazer</h3>
+                            <p class="text-gray-500 text-sm mt-1">Charcoal</p>
+                        </div>
+                        <span class="font-serif text-lg">$320</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#" class="inline-block border-b border-black pb-1 text-sm font-medium hover:text-gray-600 transition-colors">SHOP ALL ARRIVALS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-24 bg-brand-black text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20">
+             <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover grayscale">
+        </div>
+        <div class="relative z-10 max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-serif mb-6">Join the List</h2>
+            <p class="text-gray-400 mb-10 font-light">Sign up for exclusive access to new collections, events, and editorial content.</p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-1 bg-transparent border border-white/30 rounded-full px-6 py-3 focus:outline-none focus:border-white transition-colors text-white placeholder-gray-500">
+                <button type="submit" class="bg-white text-black px-8 py-3 rounded-full font-medium hover:bg-gray-200 transition-colors">SUBSCRIBE</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white pt-20 pb-10 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+            <div>
+                <a href="#" class="text-2xl font-serif font-semibold tracking-tight block mb-6">LUMIÈRE</a>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    Redefining modern luxury with sustainable practices and timeless design.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-medium mb-6 text-sm tracking-wide">SHOP</h4>
+                <ul class="space-y-4 text-sm text-gray-500">
+                    <li><a href="#" class="hover:text-black transition-colors">New Arrivals</a></li>
+                    <li><a href="#" class="hover:text-black transition-colors">Clothing</a></li>
+                    <li><a href="#" class="hover:text-black transition-colors">Accessories</a></li>
+                    <li><a href="#" class="hover:text-black transition-colors">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-medium mb-6 text-sm tracking-wide">SUPPORT</h4>
+                <ul class="space-y-4 text-sm text-gray-500">
+                    <li><a href="#" class="hover:text-black transition-colors">Contact Us</a></li>
+                    <li><a href="#" class="hover:text-black transition-colors">FAQs</a></li>
+                    <li><a href="#" class="hover:text-black transition-colors">Shipping & Returns</a></li>
+                    <li><a href="#" class="hover:text-black transition-colors">Size Guide</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-medium mb-6 text-sm tracking-wide">FOLLOW US</h4>
+                <div class="flex space-x-4">
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-black hover:text-white transition-colors">
+                        <i data-lucide="instagram" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-black hover:text-white transition-colors">
+                        <i data-lucide="twitter" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#" class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center hover:bg-black hover:text-white transition-colors">
+                        <i data-lucide="facebook" class="w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+            <p>&copy; 2025 Lumière Fashion. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-black">Privacy Policy</a>
+                <a href="#" class="hover:text-black">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aria Sterling — Spatial Architect</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              canvas: "#FFFFFF",
+              alabaster: "#F9F9F7",
+              charcoal: "#1A1A1A",
+              taupe: "#8C8C8C",
+              silver: "#E5E5E5",
+              sandstone: "#D6D0C4",
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', "serif"],
+              sans: ['"Montserrat"', "sans-serif"],
+            },
+            spacing: {
+              128: "32rem",
+            },
+            transitionDuration: {
+              2000: "2000ms",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* Custom Utilities */
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .fade-in-image {
+        animation: fadeIn 0.8s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* Hide scrollbar for clean look in some containers if needed */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-canvas text-charcoal font-sans antialiased selection:bg-sandstone selection:text-white"
+  >
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full bg-canvas/90 backdrop-blur-sm z-50 border-b border-silver transition-all duration-300"
+      id="navbar"
+    >
+      <div
+        class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center"
+      >
+        <!-- Logo -->
+        <a
+          href="#"
+          class="font-serif text-2xl tracking-wide italic font-medium z-50"
+        >
+          AS
+          <span
+            class="not-italic text-sm ml-2 tracking-widest uppercase font-sans text-taupe hidden md:inline-block"
+            >| Aria Sterling</span
+          >
+        </a>
+
+        <!-- Desktop Menu -->
+        <div
+          class="hidden md:flex space-x-12 text-xs uppercase tracking-[0.2em] font-medium text-charcoal"
+        >
+          <a href="#" class="hover:text-taupe transition-colors">Home</a>
+          <a href="#about" class="hover:text-taupe transition-colors">About</a>
+          <a href="#services" class="hover:text-taupe transition-colors"
+            >Services</a
+          >
+          <a href="#journal" class="hover:text-taupe transition-colors"
+            >Journal</a
+          >
+          <a href="#contact" class="hover:text-taupe transition-colors"
+            >Contact</a
+          >
+        </div>
+
+        <!-- Social/Contact Icons -->
+        <div class="hidden md:flex items-center space-x-6 text-taupe">
+          <a href="#" class="hover:text-charcoal transition-colors"
+            ><i data-lucide="instagram" class="w-4 h-4"></i
+          ></a>
+          <a href="#" class="hover:text-charcoal transition-colors"
+            ><i data-lucide="mail" class="w-4 h-4"></i
+          ></a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden text-charcoal focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="relative pt-20 min-h-screen flex items-center overflow-hidden"
+    >
+      <div class="max-w-7xl mx-auto px-6 w-full h-full">
+        <div
+          class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center h-full"
+        >
+          <!-- Left: Portrait Image -->
+          <div
+            class="md:col-span-5 h-[70vh] relative reveal delay-100 group overflow-hidden"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1200&auto=format&fit=crop"
+              alt="Aria Sterling Portrait"
+              class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 group-hover:grayscale-0 transition-all duration-1000 ease-out"
+            />
+            <div
+              class="absolute bottom-6 right-6 font-serif italic text-white/80 text-lg mix-blend-difference"
+            >
+              Spatial Architect
+            </div>
+          </div>
+
+          <!-- Right: Text Content -->
+          <div class="md:col-span-1"></div>
+
+          <div
+            class="md:col-span-6 flex flex-col justify-center space-y-8 reveal delay-300"
+          >
+            <div>
+              <span class="font-serif italic text-3xl text-taupe block mb-2"
+                >Meet Aria</span
+              >
+              <h1
+                class="font-serif text-6xl md:text-7xl lg:text-8xl leading-none tracking-tight mb-8"
+              >
+                Aria<br />Sterling
+              </h1>
+              <div class="w-12 h-[1px] bg-charcoal mb-8"></div>
+            </div>
+
+            <p
+              class="text-taupe text-sm md:text-base leading-relaxed tracking-wide max-w-md"
+            >
+              With a refined eye for style, Aria is deeply passionate and visual
+              about every space she designs, whether it contributes to a home
+              retreat or a boutique retail space.
+            </p>
+
+            <div
+              class="pt-8 flex flex-col sm:flex-row items-start sm:items-center gap-8"
+            >
+              <a
+                href="#portfolio"
+                class="inline-block bg-sandstone text-charcoal px-8 py-4 text-xs tracking-widest uppercase hover:bg-charcoal hover:text-white transition-all duration-500"
+              >
+                View Portfolio
+              </a>
+
+              <div class="flex flex-col">
+                <span
+                  class="text-[10px] uppercase tracking-widest text-taupe mb-1"
+                  >Contact</span
+                >
+                <span class="font-serif italic text-xl">+1 (555) 010-9988</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div
+        class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-taupe/50"
+      >
+        <i data-lucide="arrow-down" class="w-5 h-5"></i>
+      </div>
+    </header>
+
+    <!-- Collage / About Section -->
+    <section id="about" class="py-32 bg-alabaster">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+          <!-- Text Block -->
+          <div
+            class="md:col-span-4 flex flex-col justify-between h-full reveal"
+          >
+            <div>
+              <span class="font-serif italic text-2xl text-taupe block mb-4"
+                >Vision</span
+              >
+              <h2 class="font-serif text-5xl md:text-6xl mb-8 leading-tight">
+                Curated<br />Living
+              </h2>
+              <div class="w-full h-[1px] bg-silver mb-8"></div>
+              <p class="text-taupe leading-relaxed mb-8">
+                With a meticulous eye for detail, we curate environments that
+                breathe life and sophistication into your daily routines. Design
+                is not just visual—it is deeply emotional.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="group inline-flex items-center text-xs tracking-widest uppercase border-b border-charcoal pb-1 w-max hover:text-taupe hover:border-taupe transition-colors"
+            >
+              Read Philosophy
+              <i
+                data-lucide="arrow-right"
+                class="w-3 h-3 ml-2 group-hover:ml-4 transition-all"
+              ></i>
+            </a>
+          </div>
+
+          <!-- Masonry Images -->
+          <div class="md:col-span-8 relative">
+            <div class="grid grid-cols-2 gap-6 h-full">
+              <div class="space-y-6 mt-12 md:mt-24">
+                <img
+                  src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=600&auto=format&fit=crop"
+                  class="w-full h-80 object-cover reveal delay-100 hover:scale-[1.02] transition-transform duration-700"
+                  alt="Minimal Interior"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=600&auto=format&fit=crop"
+                  class="w-full h-64 object-cover reveal delay-200 hover:scale-[1.02] transition-transform duration-700"
+                  alt="Modern Decor"
+                />
+              </div>
+              <div class="space-y-6">
+                <img
+                  src="https://images.unsplash.com/photo-1616486338812-3dadae4b4f9d?q=80&w=600&auto=format&fit=crop"
+                  class="w-full h-96 object-cover reveal delay-300 hover:scale-[1.02] transition-transform duration-700"
+                  alt="Beige Architecture"
+                />
+                <div
+                  class="bg-sandstone/20 p-8 flex items-center justify-center text-center h-48 reveal delay-400"
+                >
+                  <span class="font-serif italic text-xl text-charcoal"
+                    >"Simplicity is the ultimate sophistication."</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Interactive Section -->
+    <section id="services" class="py-32 bg-canvas">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+          <!-- Left: Accordion List -->
+          <div class="lg:col-span-5 reveal">
+            <span
+              class="text-xs font-bold tracking-widest text-taupe uppercase mb-12 block"
+              >What We Do</span
+            >
+            <h2 class="font-serif text-5xl mb-16">Core Expertise</h2>
+
+            <div class="space-y-0" id="services-list">
+              <!-- Service Item JS generated or hardcoded, doing hardcoded for better control -->
+
+              <div
+                class="service-item group py-8 border-t border-silver cursor-pointer transition-colors hover:bg-alabaster"
+                data-image="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop"
+                onclick="activateService(this, 0)"
+              >
+                <div class="flex justify-between items-center px-4">
+                  <h3
+                    class="font-serif text-2xl md:text-3xl text-charcoal group-hover:text-taupe transition-colors italic"
+                  >
+                    Residential Design
+                  </h3>
+                  <i
+                    data-lucide="plus"
+                    class="w-4 h-4 text-taupe transition-transform duration-300 group-hover:rotate-45"
+                  ></i>
+                </div>
+                <div
+                  class="service-desc overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-4"
+                >
+                  <p class="pt-4 text-taupe text-sm leading-relaxed max-w-sm">
+                    Aria provides full-service design execution, from the
+                    initial blueprint to the final placement of art, tailored to
+                    your lifestyle.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="service-item group py-8 border-t border-silver cursor-pointer transition-colors hover:bg-alabaster"
+                data-image="https://images.unsplash.com/photo-1507089947368-19c1da9775ae?q=80&w=1200&auto=format&fit=crop"
+                onclick="activateService(this, 1)"
+              >
+                <div class="flex justify-between items-center px-4">
+                  <h3
+                    class="font-serif text-2xl md:text-3xl text-charcoal group-hover:text-taupe transition-colors"
+                  >
+                    Project Management
+                  </h3>
+                  <i
+                    data-lucide="plus"
+                    class="w-4 h-4 text-taupe transition-transform duration-300"
+                  ></i>
+                </div>
+                <div
+                  class="service-desc overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-4"
+                >
+                  <p class="pt-4 text-taupe text-sm leading-relaxed max-w-sm">
+                    Overseeing every detail of construction and installation to
+                    ensure timelines and budgets are respected without
+                    compromising quality.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="service-item group py-8 border-t border-silver cursor-pointer transition-colors hover:bg-alabaster"
+                data-image="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1200&auto=format&fit=crop"
+                onclick="activateService(this, 2)"
+              >
+                <div class="flex justify-between items-center px-4">
+                  <h3
+                    class="font-serif text-2xl md:text-3xl text-charcoal group-hover:text-taupe transition-colors"
+                  >
+                    Concept Styling
+                  </h3>
+                  <i
+                    data-lucide="plus"
+                    class="w-4 h-4 text-taupe transition-transform duration-300"
+                  ></i>
+                </div>
+                <div
+                  class="service-desc overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-4"
+                >
+                  <p class="pt-4 text-taupe text-sm leading-relaxed max-w-sm">
+                    Curating furniture, art, and accessories to bring a cohesive
+                    and elevated narrative to existing spaces.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="service-item group py-8 border-t border-silver cursor-pointer transition-colors hover:bg-alabaster"
+                data-image="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=1200&auto=format&fit=crop"
+                onclick="activateService(this, 3)"
+              >
+                <div class="flex justify-between items-center px-4">
+                  <h3
+                    class="font-serif text-2xl md:text-3xl text-charcoal group-hover:text-taupe transition-colors italic"
+                  >
+                    Kitchen Planning
+                  </h3>
+                  <i
+                    data-lucide="plus"
+                    class="w-4 h-4 text-taupe transition-transform duration-300"
+                  ></i>
+                </div>
+                <div
+                  class="service-desc overflow-hidden max-h-0 transition-all duration-500 ease-in-out px-4"
+                >
+                  <p class="pt-4 text-taupe text-sm leading-relaxed max-w-sm">
+                    Functional yet stunning culinary spaces designed for the way
+                    you cook and entertain.
+                  </p>
+                </div>
+              </div>
+
+              <div class="border-t border-silver"></div>
+            </div>
+          </div>
+
+          <!-- Right: Dynamic Image -->
+          <div
+            class="lg:col-span-7 h-[600px] lg:h-[800px] relative reveal delay-200 mt-12 lg:mt-0"
+          >
+            <div class="absolute inset-0 bg-alabaster overflow-hidden">
+              <img
+                id="service-image"
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop"
+                alt="Service Example"
+                class="w-full h-full object-cover transition-opacity duration-700 ease-in-out"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Journal Section -->
+    <section id="journal" class="py-32 bg-alabaster">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-end mb-16 reveal">
+          <h2 class="font-serif text-4xl md:text-5xl">Journal & Insights...</h2>
+          <a
+            href="#"
+            class="hidden md:inline-block text-xs uppercase tracking-widest text-taupe hover:text-charcoal border-b border-transparent hover:border-charcoal transition-all"
+            >View All Posts</a
+          >
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Post 1 -->
+          <article class="group cursor-pointer reveal delay-100">
+            <div class="overflow-hidden mb-6 h-64 relative">
+              <div
+                class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors z-10"
+              ></div>
+              <img
+                src="https://images.unsplash.com/photo-1595878201211-12501625f23d?q=80&w=600&auto=format&fit=crop"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                alt="Lighting"
+              />
+            </div>
+            <div class="flex flex-col space-y-3">
+              <div
+                class="flex justify-between items-center border-b border-silver pb-2 mb-2"
+              >
+                <span class="text-[10px] uppercase tracking-widest text-taupe"
+                  >Interior Design</span
+                >
+                <span class="text-[10px] uppercase tracking-widest text-taupe"
+                  >21 Oct</span
+                >
+              </div>
+              <h3
+                class="font-serif text-2xl group-hover:text-taupe transition-colors"
+              >
+                Why Lighting Defines a Room's Mood
+              </h3>
+              <a
+                href="#"
+                class="text-xs uppercase tracking-widest text-charcoal mt-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0"
+                >Read Article</a
+              >
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="group cursor-pointer reveal delay-200">
+            <div class="overflow-hidden mb-6 h-64 relative">
+              <div
+                class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors z-10"
+              ></div>
+              <img
+                src="https://images.unsplash.com/photo-1512956976664-dcb412a83152?q=80&w=600&auto=format&fit=crop"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                alt="Minimalist"
+              />
+            </div>
+            <div class="flex flex-col space-y-3">
+              <div
+                class="flex justify-between items-center border-b border-silver pb-2 mb-2"
+              >
+                <span class="text-[10px] uppercase tracking-widest text-taupe"
+                  >Architecture</span
+                >
+                <span class="text-[10px] uppercase tracking-widest text-taupe"
+                  >15 Oct</span
+                >
+              </div>
+              <h3
+                class="font-serif text-2xl group-hover:text-taupe transition-colors"
+              >
+                The Art of Minimalist Living in 2025
+              </h3>
+              <a
+                href="#"
+                class="text-xs uppercase tracking-widest text-charcoal mt-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0"
+                >Read Article</a
+              >
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="group cursor-pointer reveal delay-300">
+            <div class="overflow-hidden mb-6 h-64 relative">
+              <div
+                class="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors z-10"
+              ></div>
+              <img
+                src="https://images.unsplash.com/photo-1549490349-8643362247b5?q=80&w=600&auto=format&fit=crop"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
+                alt="Art"
+              />
+            </div>
+            <div class="flex flex-col space-y-3">
+              <div
+                class="flex justify-between items-center border-b border-silver pb-2 mb-2"
+              >
+                <span class="text-[10px] uppercase tracking-widest text-taupe"
+                  >Lifestyle</span
+                >
+                <span class="text-[10px] uppercase tracking-widest text-taupe"
+                  >08 Oct</span
+                >
+              </div>
+              <h3
+                class="font-serif text-2xl group-hover:text-taupe transition-colors"
+              >
+                Selecting the Perfect Art for Your Void
+              </h3>
+              <a
+                href="#"
+                class="text-xs uppercase tracking-widest text-charcoal mt-2 opacity-0 group-hover:opacity-100 transition-opacity transform translate-y-2 group-hover:translate-y-0"
+                >Read Article</a
+              >
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Feed -->
+    <section class="py-20 bg-canvas overflow-hidden">
+      <div
+        class="max-w-7xl mx-auto px-6 flex flex-col items-center mb-12 reveal"
+      >
+        <h2 class="font-serif text-3xl mb-2">@AriaSterlingStudio</h2>
+        <p class="text-taupe text-sm tracking-wide">
+          Follow our visual journey on social media for daily inspiration.
+        </p>
+        <a
+          href="#"
+          class="mt-6 px-6 py-3 border border-silver text-[10px] uppercase tracking-widest hover:bg-charcoal hover:text-white transition-colors"
+          >Follow Me</a
+        >
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-1 px-1">
+        <div class="aspect-square relative group overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1520699918507-afc68e329245?q=80&w=600&auto=format&fit=crop"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            alt="Social 1"
+          />
+          <div
+            class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white"
+          >
+            <i data-lucide="instagram" class="w-6 h-6"></i>
+          </div>
+        </div>
+        <div class="aspect-square relative group overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=600&auto=format&fit=crop"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            alt="Social 2"
+          />
+          <div
+            class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white"
+          >
+            <i data-lucide="instagram" class="w-6 h-6"></i>
+          </div>
+        </div>
+        <div class="aspect-square relative group overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1598928506311-1555d33145fc?q=80&w=600&auto=format&fit=crop"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            alt="Social 3"
+          />
+          <div
+            class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white"
+          >
+            <i data-lucide="instagram" class="w-6 h-6"></i>
+          </div>
+        </div>
+        <div class="aspect-square relative group overflow-hidden">
+          <img
+            src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?q=80&w=600&auto=format&fit=crop"
+            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+            alt="Social 4"
+          />
+          <div
+            class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-white"
+          >
+            <i data-lucide="instagram" class="w-6 h-6"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-32 bg-alabaster relative">
+      <div
+        class="absolute inset-0 overflow-hidden opacity-10 pointer-events-none"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?q=80&w=2000&auto=format&fit=crop"
+          class="w-full h-full object-cover grayscale"
+          alt="Texture"
+        />
+      </div>
+      <div class="max-w-xl mx-auto px-6 text-center relative z-10 reveal">
+        <h2 class="font-serif text-4xl mb-4">Receive Design Updates</h2>
+        <p class="text-taupe mb-8 text-sm">
+          Don't miss our latest guides. With a refined list for style, be the
+          first to know.
+        </p>
+
+        <form class="flex flex-col space-y-4">
+          <input
+            type="email"
+            placeholder="Enter your email address..."
+            class="bg-transparent border-b border-charcoal py-3 px-2 text-center text-charcoal placeholder-taupe/70 focus:outline-none focus:border-taupe transition-colors font-sans text-sm"
+          />
+          <button
+            type="submit"
+            class="bg-sandstone text-charcoal px-8 py-4 text-xs tracking-widest uppercase hover:bg-charcoal hover:text-white transition-all duration-300"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-canvas border-t border-silver pt-24 pb-12">
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-16"
+      >
+        <!-- Brand -->
+        <div class="flex flex-col space-y-4">
+          <h4 class="font-serif text-2xl italic">AS | Aria Sterling</h4>
+          <p class="text-taupe text-xs leading-relaxed max-w-xs">
+            Creating spaces that resonate with silence and beauty.
+          </p>
+        </div>
+
+        <!-- Menu -->
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-widest mb-6">Menu</h5>
+          <ul class="space-y-3 text-xs tracking-wide text-taupe">
+            <li>
+              <a href="#" class="hover:text-charcoal transition-colors">Home</a>
+            </li>
+            <li>
+              <a href="#about" class="hover:text-charcoal transition-colors"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="hover:text-charcoal transition-colors"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#journal" class="hover:text-charcoal transition-colors"
+                >Journal</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-charcoal transition-colors"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Details -->
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-widest mb-6">
+            Studio
+          </h5>
+          <ul class="space-y-3 text-xs tracking-wide text-taupe">
+            <li>1209 Design District</li>
+            <li>New York, NY 10013</li>
+            <li class="pt-2">
+              <a
+                href="mailto:hello@ariasterling.com"
+                class="hover:text-charcoal"
+                >hello@ariasterling.com</a
+              >
+            </li>
+            <li>+1 (555) 010-9988</li>
+          </ul>
+        </div>
+
+        <!-- Social -->
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-widest mb-6">
+            Social
+          </h5>
+          <div class="flex space-x-4 text-charcoal">
+            <a href="#" class="hover:text-taupe transition-colors"
+              ><i data-lucide="facebook" class="w-5 h-5"></i
+            ></a>
+            <a href="#" class="hover:text-taupe transition-colors"
+              ><i data-lucide="instagram" class="w-5 h-5"></i
+            ></a>
+            <a href="#" class="hover:text-taupe transition-colors"
+              ><i data-lucide="twitter" class="w-5 h-5"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-6 border-t border-silver pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-taupe"
+      >
+        <div class="space-x-4 mb-4 md:mb-0">
+          <a href="#" class="hover:text-charcoal">Privacy Policy</a>
+          <a href="#" class="hover:text-charcoal">Terms of Use</a>
+        </div>
+        <div>&copy; 2025 Aria Sterling. All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Icons
+      lucide.createIcons();
+
+      // Service Tab Logic
+      const serviceItems = document.querySelectorAll(".service-item");
+      const serviceImage = document.getElementById("service-image");
+      let currentActive = -1; // No active initially or set 0
+
+      function activateService(element, index) {
+        // If clicking the same one, maybe toggle off or do nothing?
+        // Design usually implies switching. Let's maximize the current and minimize others.
+
+        // NOTE: Requirement says "active state expands or highlights; triggers image change".
+        // Implementation: Collapse all others, Expand this one.
+
+        if (currentActive === index) return;
+        currentActive = index;
+
+        // Reset all
+        serviceItems.forEach((item) => {
+          const desc = item.querySelector(".service-desc");
+          const icon = item.querySelector('[data-lucide="plus"]');
+          const title = item.querySelector("h3");
+
+          desc.style.maxHeight = "0";
+          title.classList.remove("italic"); // revert style
+          if (icon) icon.style.transform = "rotate(0deg)";
+          item.classList.remove("bg-alabaster");
+        });
+
+        // Activate current
+        const desc = element.querySelector(".service-desc");
+        const icon = element.querySelector('[data-lucide="plus"]');
+        const title = element.querySelector("h3");
+        const newImageSrc = element.getAttribute("data-image");
+
+        // Expand
+        // Check scrollHeight for dynamic height
+        desc.style.maxHeight = desc.scrollHeight + "px";
+        title.classList.add("italic");
+        if (icon) icon.style.transform = "rotate(45deg)";
+        element.classList.add("bg-alabaster");
+
+        // Image Swap with Crossfade effect (simple opacity toggle)
+        serviceImage.style.opacity = "0";
+
+        setTimeout(() => {
+          serviceImage.src = newImageSrc;
+          serviceImage.onload = () => {
+            serviceImage.style.opacity = "1";
+          };
+          // Fallback if cached
+          if (serviceImage.complete) serviceImage.style.opacity = "1";
+        }, 300); // match roughly half the specific transition time?
+      }
+
+      // Initialize first service as active
+      if (serviceItems.length > 0) {
+        activateService(serviceItems[0], 0);
+      }
+
+      // Scroll Reveal Animation via Intersection Observer
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+            // Optional: stop observing once revealed
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      document.querySelectorAll(".reveal").forEach((el) => {
+        observer.observe(el);
+      });
+
+      // Sticky Nav Transparency on Scroll
+      const navbar = document.getElementById("navbar");
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          navbar.classList.add("shadow-sm");
+          navbar.classList.remove("h-20");
+          navbar.classList.add("h-16");
+        } else {
+          navbar.classList.remove("shadow-sm");
+          navbar.classList.remove("h-16");
+          navbar.classList.add("h-20");
+        }
+      });
+    </script>
+  </body>
+</html>
